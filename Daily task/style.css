@@ -1,0 +1,38 @@
+#menu1 {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+#menu1 ul {
+    color: blue;
+    font: 16pt Arial;
+}
+#menu1 a:link, #menu1 a:visited {
+    color: blue;
+    text-decoration: none;
+}
+#menu1 a:hover {
+    color: red;
+    text-decoration: underline;
+}
+/* ---------------------------------------- */
+#menu2 {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+#menu2 li {
+    list-style-type: none;
+    border: 2px solid blue;
+    width: 250px;
+    font: 16pt Arial;
+    margin-top: 15px;
+}
+#menu2 a:link, #menu2 a:visited {
+        color: blue;
+        text-decoration: none;
+        padding: 5px;
+        display: block;
+}
+#menu2 a:hover {
+    font-weight: bold;
+}
+/* ----------------------------------------------- */
