@@ -70,8 +70,8 @@
     padding: 5px;
     display: block;
 }
-#menu4 a:hover {
-    background-color: white;
+#menu4 a:hover, #menu4 a.active {
+    background: white url("fly.png") no-repeat right center;
     color: blue;
     font-weight: bold;
 }
@@ -81,3 +81,9 @@
     width: 250px;
     margin-top: 15px;
     list-style-type: none;
+}
+/* --------------------------------------------------------- */
+#menu5 {
+    border: 1px solid black;
+    margin-top: 20px;
+}
