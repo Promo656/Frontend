@@ -36,3 +36,30 @@
     font-weight: bold;
 }
 /* ----------------------------------------------- */
+#menu3 {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+#menu3 a:link, #menu3 a:visited {
+    color: white;
+    font: 16pt Arial;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+#menu3 a:hover {
+    background-color: white;
+    color: black;
+}
+#menu3 li {
+    background-color: rgb(90, 88, 88);
+    border: 2px solid black;
+    width: 250px;
+    margin-top: 15px;
+    list-style-type: none;
+}
+/* ------------------------------------------------------------ */
+#menu4 {
+    border: 1px solid black;
+    margin-top: 20px;
+}
