@@ -83,7 +83,35 @@
     list-style-type: none;
 }
 /* --------------------------------------------------------- */
+.clearfix {
+    clear: both;
+}
 #menu5 {
     border: 1px solid black;
     margin-top: 20px;
+    font: 16pt Arial;
+}
+#menu5 a:link, #menu5 a:visited {
+    color: blue;
+}
+#menu5 a:hover, #menu5 a.active {
+    color:white;
+    background-color: rgb(92, 92, 92);
+}
+#menu5 a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+/* #menu5 li {
+    border: 2px solid black ;
+    display: inline-block;
+    padding: 8px 5px;
+} */
+#menu5 li {
+    border: 2px solid black ;
+    float: left;
+    list-style-type: none;
+    margin-right: 10px;
+    
 }
