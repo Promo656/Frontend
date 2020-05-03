@@ -49,18 +49,36 @@
         #nowrap ul {
             flex-wrap: nowrap;
         }
+
         #wrap ul {
             flex-wrap: wrap;
         }
+
         #wrap-reverse ul {
             flex-wrap: wrap-reverse;
+        }
+        #flex-start ul {
+            justify-content: flex-start;
+        }
+        #flex-end ul {
+            justify-content: flex-end;
+        }
+        #center ul {
+            justify-content: center;
+        }
+        #space-between ul {
+            justify-content: space-between;
+        }
+        #space-around ul {
+            justify-content:space-around;
         }
     </style>
 </head>
 
 <body>
-    <div class="of">.container {
-        display: flex;}
+    <div class="of">
+        <p>.container {display: flex;}
+        </p>
         <ul>
             <li><a href="">Главная</a></li>
             <li><a href="">Контакты для свзяь</a></li>
@@ -70,8 +88,9 @@
         </ul>
     </div>
 
-    <div class="of">.container {
-        flex-direction: row;}
+    <div class="of">
+        <p>.container {flex-direction: row;}
+        </p>
         <div>
             <ul>
                 <li><a href="">Главная</a></li>
@@ -82,9 +101,8 @@
             </ul>
         </div>
         <hr size="5" noshade="">
-
-        .container {
-        flex-direction: row-reverse;}
+        <p>.container {flex-direction: row-reverse;}
+        </p>
         <div id="row-reverse">
             <ul>
                 <li><a href="">Главная</a></li>
@@ -95,8 +113,8 @@
             </ul>
         </div>
         <hr size="5" noshade="">
-        .container {
-        flex-direction: column;}
+        <p>.container {flex-direction: column;}
+        </p>
         <div id="column">
             <ul>
                 <li><a href="">Главная</a></li>
@@ -107,8 +125,8 @@
             </ul>
         </div>
         <hr size="5" noshade="">
-        .container {
-        flex-direction: column-reverse;}
+        <p>.container {flex-direction: column-reverse;}
+        </p>
         <div id="column-reverse">
             <ul>
                 <li><a href="">Главная</a></li>
@@ -120,8 +138,9 @@
         </div>
     </div>
 
-    <div class="of">.container{
-        flex-wrap: nowrap;}
+    <div class="of">
+        <p>.container {flex-wrap: nowrap;}
+        </p>
         <div id="nowrap">
             <ul>
                 <li><a href="">Главная</a></li>
@@ -132,8 +151,8 @@
             </ul>
         </div>
         <hr size="5" noshade="">
-        .container{
-            flex-wrap: wrap;}
+        <p>.container {flex-wrap: wrap;}
+        </p>
         <div id="wrap">
             <ul>
                 <li><a href="">Главная</a></li>
@@ -144,9 +163,73 @@
             </ul>
         </div>
         <hr size="5" noshade="">
-        .container{
-            flex-wrap: wrap-reverse;}
+        <p>.container {flex-wrap: wrap-reverse;}
+        </p>
         <div id="wrap-reverse">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="of">
+        <p>.container {justify-content: flex-start;}
+        </p>
+        <div id="flex-start">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {justify-content: flex-end;}
+        </p>
+        <div id="flex-end">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {justify-content: center;}
+        </p>
+        <div id="center">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {
+            justify-content: space-between;}
+        </p>
+        <div id="space-between">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {
+            justify-content: space-around;}
+        </p>
+        <div id="space-around">
             <ul>
                 <li><a href="">Главная</a></li>
                 <li><a href="">Контакты для свзяь</a></li>
