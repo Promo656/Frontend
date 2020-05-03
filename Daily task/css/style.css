@@ -128,7 +128,7 @@
 }
 #menu6 a:link, #menu6 a:visited {
 color: white;
-display: block;
+
 }
 #menu6 a:hover {
     background-color: rgb(212, 33, 33);
@@ -139,6 +139,7 @@ display: block;
 #menu6 a {
     text-decoration: none;
     padding: 10px;
+    display: block;
 }
 /* ------------------------------------------------------------- */
 #calendar {
