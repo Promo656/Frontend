@@ -57,20 +57,59 @@
         #wrap-reverse ul {
             flex-wrap: wrap-reverse;
         }
-        #flex-start ul {
+        #jc-flex-start ul {
             justify-content: flex-start;
         }
-        #flex-end ul {
+        #jc-flex-end ul {
             justify-content: flex-end;
         }
-        #center ul {
+        #jc-center ul {
             justify-content: center;
         }
-        #space-between ul {
+        #jc-space-between ul {
             justify-content: space-between;
         }
-        #space-around ul {
+        #jc-space-around ul {
             justify-content:space-around;
+        }
+        #ai-flex-start ul {
+            align-items: flex-start;
+        }
+        #ai-flex-end ul {
+            align-items: flex-end;
+        }
+        #ai-center ul {
+            align-items:center;
+        }
+        #ai-stretch ul {
+            align-items: stretch;
+        }
+        #ai-baseline ul {
+            align-items: baseline;
+        }
+        #ac-flex-start ul {
+            align-content: flex-start;
+            flex-wrap: wrap;
+        }
+        #ac-flex-end ul {
+            align-content: flex-end;
+            flex-wrap: wrap;
+        }
+        #ac-center ul {
+            align-content: center;
+            flex-wrap: wrap;
+        }
+        #ac-stretch ul {
+            align-content: stretch;
+            flex-wrap: wrap;
+        }
+        #ac-space-between ul {
+            align-content: space-between;
+            flex-wrap: wrap;
+        }
+        #ac-space-around ul {
+            align-content: space-between;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -179,7 +218,7 @@
     <div class="of">
         <p>.container {justify-content: flex-start;}
         </p>
-        <div id="flex-start">
+        <div id="jc-flex-start">
             <ul>
                 <li><a href="">Главная</a></li>
                 <li><a href="">Контакты для свзяь</a></li>
@@ -191,7 +230,7 @@
         <hr size="5" noshade="">
         <p>.container {justify-content: flex-end;}
         </p>
-        <div id="flex-end">
+        <div id="jc-flex-end">
             <ul>
                 <li><a href="">Главная</a></li>
                 <li><a href="">Контакты для свзяь</a></li>
@@ -203,7 +242,7 @@
         <hr size="5" noshade="">
         <p>.container {justify-content: center;}
         </p>
-        <div id="center">
+        <div id="jc-center">
             <ul>
                 <li><a href="">Главная</a></li>
                 <li><a href="">Контакты для свзяь</a></li>
@@ -216,7 +255,7 @@
         <p>.container {
             justify-content: space-between;}
         </p>
-        <div id="space-between">
+        <div id="jc-space-between">
             <ul>
                 <li><a href="">Главная</a></li>
                 <li><a href="">Контакты для свзяь</a></li>
@@ -229,7 +268,142 @@
         <p>.container {
             justify-content: space-around;}
         </p>
-        <div id="space-around">
+        <div id="jc-space-around">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="of">
+        <p>.container {align-items: flex-start;}
+        </p>
+        <div id="ai-flex-start">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {align-items: flex-end;}
+        </p>
+        <div id="ai-flex-end">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {align-items: center;}
+        </p>
+        <div id="ai-center">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {align-items: stretch;}
+        </p>
+        <div id="ai-stretch">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {align-items: baseline;}
+        </p>
+        <div id="ai-baseline">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="of">
+        <p>.container {align-content: flex-start;}
+        </p>
+        <div id="ac-flex-start" style="border: 1px solid black; height: 300px;">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {align-content: flex-end;}
+        </p>
+        <div id="ac-flex-end" style="border: 1px solid black; height: 300px;">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {align-content: center;}
+        </p>
+        <div id="ac-center" style="border: 1px solid black; height: 300px;">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {align-content: stretch;}
+        </p>
+        <div id="ac-stretch" style="border: 1px solid black; height: 300px;">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {align-content: space-between;}
+        </p>
+        <div id="ac-space-between" style="border: 1px solid black; height: 300px;">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        <p>.container {align-content: space-around;}
+        </p>
+        <div id="ac-space-around" style="border: 1px solid black; height: 300px;">
             <ul>
                 <li><a href="">Главная</a></li>
                 <li><a href="">Контакты для свзяь</a></li>
