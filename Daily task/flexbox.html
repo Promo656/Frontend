@@ -1,47 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FlexBox</title>
     <style>
-        #menu {
-            border: 2px solid blue;
+        div.of {
+            border: 1px solid black;
             font: 16pt Arial;
-            background-color: rgb(70, 192, 240);
-        }
-        #menu a:link, #menu a:visited {
-            text-decoration: none;
-            color: white;
-        }
-        #menu a:hover {
-            color: rgb(70, 192, 240);
-            background-color: white;
-        }
-        #menu ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            padding: 0px;
-            margin: 0px; 
-        }
-        li {
-            list-style-type: none;
-        }
-        #menu a {
+            background-color: rgb(219, 219, 219);
+            margin-top: 20px;
             padding: 10px;
-            display: block;
+        }
+
+        ul {
+            padding-left: 0px;
+            display: flex;
+        }
+
+        li {
+            border: 1px solid rgb(0, 60, 255);
+            list-style-type: none;
+            padding: 8px;
+            margin: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #row ul {
+            flex-direction: row;
+        }
+
+        #row-reverse ul {
+            flex-direction: row-reverse;
+        }
+
+        #column ul {
+            flex-direction: column;
+        }
+
+        #column-reverse ul {
+            flex-direction: column-reverse;
+        }
+
+        #nowrap ul {
+            flex-wrap: nowrap;
+        }
+        #wrap ul {
+            flex-wrap: wrap;
+        }
+        #wrap-reverse ul {
+            flex-wrap: wrap-reverse;
         }
     </style>
 </head>
+
 <body>
-    <div id="menu">
-    <ul>
-        <li><a href="">Главная</a></li>
-        <li><a href="">О компании</a></li>
-        <li><a href="">Информация</a></li>
-        <li><a href="">О нас</a></li>
-    </ul>
-</div>
+    <div class="of">.container {
+        display: flex;}
+        <ul>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Контакты для свзяь</a></li>
+            <li><a href="">Информация о том как нас найти</a></li>
+            <li><a href="">Работа</a></li>
+            <li><a href="">Обучение</a></li>
+        </ul>
+    </div>
+
+    <div class="of">.container {
+        flex-direction: row;}
+        <div>
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+
+        .container {
+        flex-direction: row-reverse;}
+        <div id="row-reverse">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        .container {
+        flex-direction: column;}
+        <div id="column">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        .container {
+        flex-direction: column-reverse;}
+        <div id="column-reverse">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="of">.container{
+        flex-wrap: nowrap;}
+        <div id="nowrap">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        .container{
+            flex-wrap: wrap;}
+        <div id="wrap">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+        <hr size="5" noshade="">
+        .container{
+            flex-wrap: wrap-reverse;}
+        <div id="wrap-reverse">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
+
 </html>
