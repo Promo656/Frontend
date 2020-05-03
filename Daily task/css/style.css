@@ -140,3 +140,19 @@ display: block;
     text-decoration: none;
     padding: 10px;
 }
+/* ------------------------------------------------------------- */
+#calendar {
+    border: 1px solid black; 
+    margin-top: 20px; 
+    font: 16pt Arial; 
+    text-align: center;  
+}
+#week {
+    font-weight: bold;
+}
+#free {
+    color: rgb(177, 167, 169);
+}
+#today {
+    color: red;
+}
