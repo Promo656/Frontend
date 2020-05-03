@@ -57,56 +57,72 @@
         #wrap-reverse ul {
             flex-wrap: wrap-reverse;
         }
+
         #jc-flex-start ul {
             justify-content: flex-start;
         }
+
         #jc-flex-end ul {
             justify-content: flex-end;
         }
+
         #jc-center ul {
             justify-content: center;
         }
+
         #jc-space-between ul {
             justify-content: space-between;
         }
+
         #jc-space-around ul {
-            justify-content:space-around;
+            justify-content: space-around;
         }
+
         #ai-flex-start ul {
             align-items: flex-start;
         }
+
         #ai-flex-end ul {
             align-items: flex-end;
         }
+
         #ai-center ul {
-            align-items:center;
+            align-items: center;
         }
+
         #ai-stretch ul {
             align-items: stretch;
         }
+
         #ai-baseline ul {
             align-items: baseline;
         }
+
         #ac-flex-start ul {
             align-content: flex-start;
             flex-wrap: wrap;
         }
+
         #ac-flex-end ul {
             align-content: flex-end;
             flex-wrap: wrap;
         }
+
         #ac-center ul {
             align-content: center;
             flex-wrap: wrap;
         }
+
         #ac-stretch ul {
             align-content: stretch;
             flex-wrap: wrap;
         }
+
         #ac-space-between ul {
             align-content: space-between;
             flex-wrap: wrap;
         }
+
         #ac-space-around ul {
             align-content: space-between;
             flex-wrap: wrap;
@@ -340,6 +356,7 @@
             </ul>
         </div>
     </div>
+
     <div class="of">
         <p>.container {align-content: flex-start;}
         </p>
@@ -412,6 +429,30 @@
                 <li><a href="">Обучение</a></li>
             </ul>
         </div>
+    </div>
+
+    <div class="of">
+        <p>.item {order: "integer";}
+        </p>
+        <ul>
+            <li><a href="">Главная</a></li>
+            <li style="order: -1;"><a href="">Контакты для свзяь</a></li>
+            <li style="order: -2;"><a href="">Информация о том как нас найти</a></li>
+            <li style="order: 5;"><a href="">Работа</a></li>
+            <li style="order: 6;"><a href="">Обучение</a></li>
+        </ul>
+    </div>
+
+    <div class="of">
+        <p>.item {flex-grow: "number";}
+        </p>
+        <ul>
+            <li style="flex-grow: 1;"><a href="">Главная</a></li>
+            <li style="flex-grow: 1;"><a href="">Контакты для свзяь</a></li>
+            <li style="flex-grow: 1;"><a href="">Информация о том как нас найти</a></li>
+            <li style="flex-grow: 1;"><a href="">Работа</a></li>
+            <li style="flex-grow: 6;"><a href="">Обучение</a></li>
+        </ul>
     </div>
 </body>
 
