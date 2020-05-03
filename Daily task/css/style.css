@@ -115,3 +115,28 @@
     margin-right: 10px;
     
 }
+/* -------------------------------------------------------------- */
+#or {
+    background-color: orange;
+    margin: 0px 20px;
+
+}
+#menu6 {
+    border: 1px solid black; 
+    margin-top: 20px; 
+    font: 16pt Arial;   
+}
+#menu6 a:link, #menu6 a:visited {
+color: white;
+display: block;
+}
+#menu6 a:hover {
+    background-color: rgb(212, 33, 33);
+}
+#menu6 li {
+    display: inline-block;    
+}
+#menu6 a {
+    text-decoration: none;
+    padding: 10px;
+}
