@@ -127,6 +127,9 @@
             align-content: space-between;
             flex-wrap: wrap;
         }
+        #as-flex-end  {
+            align-self: flex-end;
+        }
     </style>
 </head>
 
@@ -465,6 +468,20 @@
             <li style="flex-shrink: 1;"><a href="">Работа</a></li>
             <li style="flex-shrink: 6;"><a href="">Обучение</a></li>
         </ul>
+    </div>
+
+    <div class="of">
+        <p>.item {align-self: flex-end;}
+        </p>
+        <div style="border: 1px solid black; height: 300px;">
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li id="as-flex-end"><a href="">Контакты для свзяь</a></li>
+                <li><a href="">Информация о том как нас найти</a></li>
+                <li><a href="">Работа</a></li>
+                <li><a href="">Обучение</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 
