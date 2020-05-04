@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        header, footer {
+            height: 20vh;
+            border: 1px solid black;
+        }
+        main {
+            display: flex;
+            flex: 1;
+            border: 1px solid black;
+        }
+        nav, aside {
+            width: 20vw;
+            border: 1px solid black;
+        }
+        article {
+            flex: 1;
+        }
+        nav {
+            order: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <main>
+        <article>Article</article>
+        <nav>Nav</nav>
+        <aside>Aside</aside>
+    </main>
+    <footer>Footer</footer>
+</body>
+
+</html>
