@@ -6,85 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .top {
-            background: black;
-            width: 100%;
-            max-width: 960px;
-            min-width: 460px;
-            min-height: 100px;
+        #margin {
+            margin: 0px 20px;
+        }
+        .header {
+            border: 1px solid black;
+            color: white;
+            background-color: black;
+            width: 90%;
+            height: 40px;
             margin: 0 auto 40px;
+            text-align: center;
         }
-        .grid {
-            margin: 0 auto;
-            font-size: 40px;
-            max-width: 960px;
-            min-width: 460px;
-            padding: 0 30px;
+        .container {
+            border: 1px solid black;
             display: flex;
-            flex-wrap: wrap;
-            flex: auto;
-            justify-content: center;
-            align-items: center;
-             }
+            flex-direction: row; 
+            justify-content: space-between;
+            flex-wrap: wrap; 
+            min-width: 480px;          
+        }
         .item {
-            background: black;
-            color: white;
-            display: flex;
-            min-width: 200px;
+            box-sizing: border-box;
+            margin: 5px;
+            border: 1px solid black;
+            text-align: center;
+            flex-grow: 1;
+           /*  width: 100%; */
+            min-width: 250px;
+            max-width: 400px;
             height: 200px;
-            margin: 0 10px 20px;
-            flex: 1 1 calc(33.33% - 20px);
-
 
         }
-
-/*         .container {
-            width: 100%;
-            max-width: 960px;
-            margin: 0 auto;
-            display: flex;
-
-        }
-
-        .block-first {
-            background: black;
-            min-height: 430px;
-            font-size: 40px;
-            color: white;
-            flex: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container-right {
-            margin-left: 30px;
-            display: flex;
-            flex: 0 0 220px;
-            flex-direction: column;
-        }
-
-        .block-item {
-            background: black;
-            min-height: 200px;
-            font-size: 40px;
-            color: white;
-            flex: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-
-        #botom {
-            margin-bottom: 0px;
-        } */
     </style>
 </head>
 
 <body>
-    <div class="top"></div>
-    <div class="grid">
+    <div class="header">Header</div>
+    <div class="container">
         <div class="item">1</div>
         <div class="item">2</div>
         <div class="item">3</div>
@@ -92,13 +51,6 @@
         <div class="item">5</div>
         <div class="item">6</div>
     </div>
-<!--     <div class="container">
-        <div class="block-first">1</div>
-        <div class="container-right">
-            <div class="block-item">2</div>
-            <div id="botom" class="block-item">3</div>
-        </div>
-    </div> -->
 </body>
 
 </html>
