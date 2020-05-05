@@ -6,40 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+        .container {
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
             display: flex;
+
+        }
+
+        .block-first {
+            background: black;
+            min-height: 430px;
+            font-size: 40px;
+            color: white;
+            flex: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container-right {
+            margin-left: 30px;
+            display: flex;
+            flex: 0 0 220px;
             flex-direction: column;
         }
-        header, footer {
-            height: 20vh;
-            border: 1px solid black;
-        }
-        main {
+
+        .block-item {
+            background: black;
+            min-height: 200px;
+            font-size: 40px;
+            color: white;
+            flex: auto;
             display: flex;
-            flex: 1;
-            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
         }
-        nav, aside {
-            width: 20vw;
-            border: 1px solid black;
-        }
-        article {
-            flex: 1;
-        }
-        nav {
-            order: -1;
+
+        #botom {
+            margin-bottom: 0px;
         }
     </style>
 </head>
 
 <body>
-    <header>Header</header>
-    <main>
-        <article>Article</article>
-        <nav>Nav</nav>
-        <aside>Aside</aside>
-    </main>
-    <footer>Footer</footer>
+    <div class="container">
+        <div class="block-first">1</div>
+        <div class="container-right">
+            <div class="block-item">2</div>
+            <div id="botom" class="block-item">3</div>
+        </div>
+    </div>
 </body>
 
 </html>
