@@ -18,20 +18,6 @@
             margin: 0 auto 10px;
             text-align: center;
         }
-        .container {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content:space-around;
-        }
-        .item {
-            border: 1px solid black;
-            font: 16pt Arial;
-            color: white;
-            text-align: center;
-
-            margin: 0 2.5%;
-        }
         .footer {
             background-color: black;
             color: white;
@@ -42,24 +28,49 @@
             text-align: center;
             margin-top: 20px;
         }
-        #item-menu {
+        .menu {
             background-color: black;
-            width: 95%;
+            color: white;
+            font: 16pt Arial;
             height: 50px;
-            margin-bottom: 10px;
-        }
-        #item-content {
             width: 95%;
-            height: 600px;
+            margin: 0 auto 10px;
+            text-align: center;
+        }
+        .container {
+            border: 1px solid black;
+            width: 95%;
+            margin: 0 auto;
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .item {
+            border: 1px solid black;
+            height: 150px;
+            min-width: 300px;
+            margin: 10px;
+            flex-grow: 1;
+            flex-basis: calc(100%-100px);
         }
     </style>
 </head>
 <body>
     <header class="header">Header</header>
+    <nav class="menu">menu</nav>
     <main>
         <div class="container">
-            <div id="item-menu" class="item">Menu</div>
-            <div id="item-content" class="item">Content</div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
         </div>
     </main>
     <footer class="footer">Footer</footer>
