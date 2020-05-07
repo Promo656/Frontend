@@ -10,44 +10,31 @@
         * {
             margin: 0;
             padding: 0;
+            /* font: 16px Montserrat; */
         }
-
         .header {
+            border: 1px solid black;
             display: flex;
-            flex-direction: row;
             justify-content: space-around;
+            flex-direction: row;
             align-items: center;
-            width: 80%;
-            margin: 5% auto;
-        }        
+        }
+        .nav {
+
+        }
         ul {
-            font: 16px Montserrat;
+            border: 1px solid black;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             list-style-type: none;
         }
         li {
-            margin: 5px;
-            padding: 5px;
-            
             
         }
-        a:link,
-        a:visited {
+        a {
             text-decoration: none;
-            color: black;
         }
-        a:hover,a.activ {
-            color: rgb(209,169,84);
-            font-weight: 600;
-            border: 1px solid rgb(209,169,84);
-        }
-/*         .activ {
-            border: 1px solid rgb(209,169,84);
-            color: rgb(209,169,84);
-            padding: 5px;
-        } */
 
     </style>
 </head>
@@ -57,7 +44,7 @@
         <div class="logo"><a href=""><img src="logo.png" alt=""></a></div>
         <nav class="nav">
             <ul>
-                <li class="activ"><a href="">ГЛАВНАЯ</a></li>
+                <li><a href="">ГЛАВНАЯ</a></li>
                 <li><a href="">SOFIT EVEN HOUSE</a></li>
                 <li><a href="">МЕРОПРИЯТИЯ</a></li>
                 <li><a href="">ТУРИСТАМ</a></li>
@@ -66,7 +53,7 @@
             </ul>
         </nav>
     </header>
-<!--     <main>
+    <!--     <main>
         <div class="container">
             <div class="item">
                 <a href=""><img src="Rectangle 1.png" alt=""></a>
