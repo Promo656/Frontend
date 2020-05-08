@@ -22,7 +22,7 @@
             margin: 50px;
         }
 
-/*         .nav {} */
+        /*         .nav {} */
 
         ul {
             /* border: 1px solid black; */
@@ -43,28 +43,32 @@
             color: black;
         }
 
-/*         a:link,
+        /*         a:link,
         a:visited {} */
 
         a:hover {
             color: rgb(209, 169, 84);
             font-weight: 600;
         }
+
         .container {
             margin: 50px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
         }
-/*         .item {
 
-        } */
+        .item {
+            position: relative;
+        }
+
         .fon {
-            background-color: rgb(209, 169, 84);
-            height: 120px;
+            position: absolute;
+            bottom: 0;
+            background: rgb(209, 169, 84);
+            opacity: 0.85;
+            height: 160px;
             width: 100%;
-            
-
         }
     </style>
 </head>
@@ -88,15 +92,23 @@
             <div class="item">
                 <img src="Rectangle 1.png" alt="">
                 <div class="fon">
-                        <p></p>
-                        <p></p>
+                    <p></p>
+                    <p></p>
                 </div>
             </div>
             <div class="item">
-               <img src="Rectangle 2.png" alt="">
+                <img src="Rectangle 2.png" alt="">
+                <div class="fon">
+                    <p></p>
+                    <p></p>
+                </div>
             </div>
             <div class="item">
-               <img src="Rectangle 3.png" alt="">
+                <img src="Rectangle 3.png" alt="">
+                <div class="fon">
+                    <p></p>
+                    <p></p>
+                </div>
             </div>
         </div>
     </main>
