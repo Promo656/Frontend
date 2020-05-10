@@ -37,7 +37,7 @@ console.log(array4[Math.floor(Math.random()*13)])
 console.log(array4[Math.floor(Math.random()*array4.length)])
 console.log("-------------------------------------------------") */
 
-var arr1=["a","b","c"]
+/* var arr1=["a","b","c"]
 var arr2=[1,2,3]
 console.log(arr1.concat(arr2));
 console.log("-------------------------------------------------")
@@ -64,3 +64,26 @@ var arr6=arr5.slice(0,3)
 var arr7=arr5.slice(3)
 console.log(arr6)
 console.log(arr7);
+console.log("-------------------------------------------------") */
+
+var obj2 = [
+    4,
+    "Egor",
+    "67",
+    3435,
+    [
+        "Dima",
+        53948,
+        "7654",
+        "Vova"
+    ]
+]
+var obj3=[
+    "BMW",
+    "AUDI",
+    "NISAN"
+]
+console.log(obj2.reverse());
+console.log(obj2.concat(obj3));
+console.log(obj2.indexOf("Egor"));
+console.log(obj2.join(" * "));
