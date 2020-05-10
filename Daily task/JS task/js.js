@@ -1,4 +1,4 @@
-
+/* 
 var dino=[]
 dino.push("Valera")
 dino.push("Dima")
@@ -35,3 +35,32 @@ var array4=array1.concat(array2,array3)
 console.log(array4[random])
 console.log(array4[Math.floor(Math.random()*13)])
 console.log(array4[Math.floor(Math.random()*array4.length)])
+console.log("-------------------------------------------------") */
+
+var arr1=["a","b","c"]
+var arr2=[1,2,3]
+console.log(arr1.concat(arr2));
+console.log("-------------------------------------------------")
+
+var arr3=["a","b","c"]
+arr3.push(1,2,3,4,5)
+console.log(arr3);
+console.log("-------------------------------------------------")
+
+arr1.reverse()
+console.log(arr1);
+console.log("-------------------------------------------------")
+
+arr3.unshift(7,5,0)
+console.log(arr3);
+console.log("-------------------------------------------------")
+
+var arr4=["JS","CSS","JQ"]
+console.log(arr4.shift(),arr4.pop());
+console.log("-------------------------------------------------")
+
+var arr5=[1,2,3,4,5]
+var arr6=arr5.slice(0,3)
+var arr7=arr5.slice(3)
+console.log(arr6)
+console.log(arr7);
