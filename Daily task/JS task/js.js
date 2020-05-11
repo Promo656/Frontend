@@ -89,7 +89,7 @@ console.log(obj2.indexOf("Egor"));
 console.log(obj2.join(" * ")); 
 console.log("-------------------------------------------------")*/
 
-var partOfBodyHuman=["Голова","Шея","Руки","Плечи","Пальцы на руках","Ноги","Колени","Глаза","Уши","Нос","Рот","Усы"]
+/* var partOfBodyHuman=["Голова","Шея","Руки","Плечи","Пальцы на руках","Ноги","Колени","Глаза","Уши","Нос","Рот","Усы"]
 var adjective=["Прекраснее","Ошеломительнее","Удивительнее","Вызывающее","Невразумительнее","Отвратительнее","Ахринительнее"]
 var partOfBodyAnimal=["Голова","Жопка","Клюв","Хвост","Усы","Хохолок","Когти","Кишки","Желчный пузырь","Жабры","Глаза","Щупальца"]
 var animal=["Макаки","Лошади","Верблюда","Коровы","Свиньи","Петуха","Окулы","Лягушки","Таракана","Осьминога"]
@@ -99,5 +99,31 @@ var sentences=[
     ", чем ",partOfBodyAnimal[Math.floor(Math.random()*partOfBodyAnimal.length)],
     "у ",animal[Math.floor(Math.random()*animal.length)] 
 ]
-
 console.log((sentences.join(" ").slice(0,1).toUpperCase(),sentences.join(" ").slice(1).toLowerCase()));
+console.log("-------------------------------------------------") */
+
+/* var arr8=[3,2,1]
+console.log(arr8.join(" больше, чем "));
+console.log("-------------------------------------------------") */
+
+var dog={
+    name:"Bim",
+    age:6,
+    color:"White",
+    bark:"Gav-Gav"
+}
+var cat={
+    name:"Lusi",
+    age:8,
+    color:"Black",
+}
+cat.legs=3
+var monkey={}
+monkey["name"]="Bobo"
+monkey["age"]=65476
+monkey["color"]="Blue"
+monkey.legs=4
+
+console.log(Object.keys(dog));
+console.log(Object.keys(cat));
+console.log(monkey);
