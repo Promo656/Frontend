@@ -106,7 +106,7 @@ console.log("-------------------------------------------------") */
 console.log(arr8.join(" больше, чем "));
 console.log("-------------------------------------------------") */
 
-var dog={
+/* var dog={
     name:"Bim",
     age:6,
     color:"White",
@@ -127,3 +127,81 @@ monkey.legs=4
 console.log(Object.keys(dog));
 console.log(Object.keys(cat));
 console.log(monkey);
+console.log("---------------------------------------------------------"); */
+
+/* var vova = {
+    name: "Vova",
+    age: 20,
+    lNumbers:
+        [
+            3,
+            7,
+            9
+        ]
+}
+var dima = {
+    name: "Dima",
+    age: 19,
+    lNumbers: [
+        23,
+        58,
+        20
+    ]
+}
+var kolya = {
+    name: "Kolya",
+    age: 18,
+    lNumbers: [
+        96,
+        82,
+        51
+    ]
+}
+var friends=[vova,dima,kolya]
+vova.age+=3
+console.log(friends[0]);
+ */
+
+var movies={
+    "Nemo":{
+        releaseDate:2003,
+        duration:100,
+        actors:[
+            "Albert Broks",
+            "Elen Fox",
+            "Alex Gold"
+        ],
+        format:"DVD"
+    },
+    "Star Wars":{
+        releaseDate:1983,
+        duration:134,
+        actors:[
+            "Mark Hemil",
+            "Harison Ford",
+            "Keri Fisher"
+        ],
+        format:"DVD"
+    },
+    "Harry Potter":{
+        releaseDate:2005,
+        duration:157,
+        actors:[
+            "Deniel Radklief",
+            "Emma Uotson",
+            "Ruppert Green"
+        ],
+        format:"Blue-Ray"
+    }
+}
+movies["Frozen"]={
+        releaseDate:2018,
+        duration:184,
+        actors:[
+            "Person1",
+            "Person2",
+            "Person3"
+        ],
+        format:"VHS"
+    }
+console.log(Object.keys(movies));
