@@ -256,3 +256,54 @@ else {
 }
 console.log("---------------------------------------------------------"); */
 
+/* var sheep=0
+while (sheep<=10) {
+    console.log("Sheeps count:"+sheep);
+    sheep++
+}
+console.log("HRRRRRRRRRPPP");
+
+for (sheep=0; sheep<=10; sheep++) {
+    console.log("Sheeps count:"+sheep);
+}
+console.log("HRRRRRRRRRPPP");
+
+var hi=5
+for (i=0; i<hi; i++) {
+    console.log("Hello");
+}
+console.log("---------------------------------------------------------");*/
+
+/* var zoo=[
+    "Cow",
+    "Frog",
+    "Cat",
+    "dog"
+]
+for (i=0; i<zoo.length; i++) {
+    console.log("We have: " + zoo[i]);
+}
+
+var name="Hello, my name is Egor"
+for (i=0; i<name.length; i++) {
+    console.log(name[i]);
+}
+
+for (x=3; x<10000; x*=3) {
+    console.log(x);
+}
+console.log("---------------------------------------------------------"); */
+
+/* var alfavit = "абвгдеёжзийклмнопрстуфхцчшщъьэюя"
+var word = ""
+while (word.length < 6) {
+    console.log(word.length);
+    console.log(alfavit[Math.floor(Math.random() * alfavit.lengths)])
+}
+ */
+
+
+
+
+
+
