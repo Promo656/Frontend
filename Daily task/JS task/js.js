@@ -66,7 +66,7 @@ console.log(arr6)
 console.log(arr7);
 console.log("-------------------------------------------------") */
 
-var obj2 = [
+/* var obj2 = [
     4,
     "Egor",
     "67",
@@ -86,4 +86,18 @@ var obj3=[
 console.log(obj2.reverse());
 console.log(obj2.concat(obj3));
 console.log(obj2.indexOf("Egor"));
-console.log(obj2.join(" * "));
+console.log(obj2.join(" * ")); 
+console.log("-------------------------------------------------")*/
+
+var partOfBodyHuman=["Голова","Шея","Руки","Плечи","Пальцы на руках","Ноги","Колени","Глаза","Уши","Нос","Рот","Усы"]
+var adjective=["Прекраснее","Ошеломительнее","Удивительнее","Вызывающее","Невразумительнее","Отвратительнее","Ахринительнее"]
+var partOfBodyAnimal=["Голова","Жопка","Клюв","Хвост","Усы","Хохолок","Когти","Кишки","Желчный пузырь","Жабры","Глаза","Щупальца"]
+var animal=["Макаки","Лошади","Верблюда","Коровы","Свиньи","Петуха","Окулы","Лягушки","Таракана","Осьминога"]
+var sentences=[
+    "У тебя ",partOfBodyHuman[Math.floor(Math.random()*partOfBodyHuman.length)],
+    "еще более ",adjective[Math.floor(Math.random()*adjective.length)],
+    ", чем ",partOfBodyAnimal[Math.floor(Math.random()*partOfBodyAnimal.length)],
+    "у ",animal[Math.floor(Math.random()*animal.length)] 
+]
+
+console.log((sentences.join(" ").slice(0,1).toUpperCase(),sentences.join(" ").slice(1).toLowerCase()));
