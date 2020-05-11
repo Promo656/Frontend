@@ -233,3 +233,26 @@ console.log("---------------------------------------------------------"); */
 }
 console.log(obj4["Some arr"][2]["number"]);
 console.log("---------------------------------------------------------"); */
+
+/* var name="Nokola"
+console.log("Hello, "+name);
+if (name.length>6) {
+    console.log("Very long name");
+} else {
+    console.log("You have short name");
+}
+console.log("---------------------------------------------------------"); */
+
+/* var name="Elena"
+if (name==="Egor") {
+    console.log("Hello, "+name);
+} else if (name==="Elena") {
+    console.log("Hello, "+name);
+} else if (name==="Genia") {
+    console.log("Hello, "+name);
+}
+else {
+    console.log("Hello stranger");
+}
+console.log("---------------------------------------------------------"); */
+
