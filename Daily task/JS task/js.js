@@ -1,4 +1,4 @@
-/* 
+/*
 var dino=[]
 dino.push("Valera")
 dino.push("Dima")
@@ -86,7 +86,7 @@ var obj3=[
 console.log(obj2.reverse());
 console.log(obj2.concat(obj3));
 console.log(obj2.indexOf("Egor"));
-console.log(obj2.join(" * ")); 
+console.log(obj2.join(" * "));
 console.log("-------------------------------------------------")*/
 
 /* var partOfBodyHuman=["Голова","Шея","Руки","Плечи","Пальцы на руках","Ноги","Колени","Глаза","Уши","Нос","Рот","Усы"]
@@ -97,7 +97,7 @@ var sentences=[
     "У тебя ",partOfBodyHuman[Math.floor(Math.random()*partOfBodyHuman.length)],
     "еще более ",adjective[Math.floor(Math.random()*adjective.length)],
     ", чем ",partOfBodyAnimal[Math.floor(Math.random()*partOfBodyAnimal.length)],
-    "у ",animal[Math.floor(Math.random()*animal.length)] 
+    "у ",animal[Math.floor(Math.random()*animal.length)]
 ]
 console.log((sentences.join(" ").slice(0,1).toUpperCase(),sentences.join(" ").slice(1).toLowerCase()));
 console.log("-------------------------------------------------") */
@@ -162,7 +162,7 @@ vova.age+=3
 console.log(friends[0]);
  */
 
-var movies={
+/* var movies={
     "Nemo":{
         releaseDate:2003,
         duration:100,
@@ -205,3 +205,31 @@ movies["Frozen"]={
         format:"VHS"
     }
 console.log(Object.keys(movies));
+console.log("---------------------------------------------------------"); */
+
+/* var scores={
+    Dima:0,
+    Vova:0,
+    Kirill:0
+}
+scores.Dima+=1
+scores.Kirill+=3
+scores.Vova+=8
+console.log(scores);
+console.log("---------------------------------------------------------"); */
+
+/* var obj4 = {
+    "name":"Some obj",
+    "Some arr":[
+        7,
+        9,
+        {
+            purpose:"Net",
+            number:123
+        },
+        3.3
+    ],
+    "random animal":"Shrimp"
+}
+console.log(obj4["Some arr"][2]["number"]);
+console.log("---------------------------------------------------------"); */
