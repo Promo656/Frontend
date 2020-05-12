@@ -294,7 +294,7 @@ for (x=3; x<10000; x*=3) {
 }
 console.log("---------------------------------------------------------"); */
 
-var alfavit = "javascript is awesome"
+/* var alfavit = "javascript is awesome"
 var word = ""
 for (var i=0; i<alfavit.length; i++) {
     if (alfavit[i]==="a") {
@@ -311,3 +311,11 @@ for (var i=0; i<alfavit.length; i++) {
 }
 console.log(word);
 document.write(word)
+console.log("---------------------------------------------------------"); */
+
+var alfavit="абвгдеёжзийклмнопрстуфхцчшщьъэюя"
+var sum=""
+for (var i=0; i<6; i++) {
+    sum+=alfavit[Math.floor(Math.random()*alfavit.length)]
+}
+console.log(sum);
