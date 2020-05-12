@@ -294,9 +294,20 @@ for (x=3; x<10000; x*=3) {
 }
 console.log("---------------------------------------------------------"); */
 
-var alfavit = "абвгдеёжзийклмнопрстуфхцчшщъьэюя"
+var alfavit = "javascript is awesome"
 var word = ""
-while (word.length < 3) {
-    word+=alfavit[Math.floor(Math.random() * alfavit.length)]
+for (var i=0; i<alfavit.length; i++) {
+    if (alfavit[i]==="a") {
+        word+="4"
+    } else if (alfavit[i]==="e") {
+        word+="3"
+    } else if (alfavit[i]==="i") {
+        word+="1"
+    } else if (alfavit[i]==="o") {
+        word+="0"
+    } else {
+        word+=alfavit[i]
+    }
 }
-console.log(word)
+console.log(word);
+document.write(word)
