@@ -294,16 +294,9 @@ for (x=3; x<10000; x*=3) {
 }
 console.log("---------------------------------------------------------"); */
 
-/* var alfavit = "абвгдеёжзийклмнопрстуфхцчшщъьэюя"
+var alfavit = "абвгдеёжзийклмнопрстуфхцчшщъьэюя"
 var word = ""
-while (word.length < 6) {
-    console.log(word.length);
-    console.log(alfavit[Math.floor(Math.random() * alfavit.lengths)])
+while (word.length < 3) {
+    word+=alfavit[Math.floor(Math.random() * alfavit.length)]
 }
- */
-
-
-
-
-
-
+console.log(word)
