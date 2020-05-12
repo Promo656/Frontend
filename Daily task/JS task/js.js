@@ -313,9 +313,10 @@ console.log(word);
 document.write(word)
 console.log("---------------------------------------------------------"); */
 
-var alfavit="абвгдеёжзийклмнопрстуфхцчшщьъэюя"
+/* var alfavit="абвгдеёжзийклмнопрстуфхцчшщьъэюя"
 var sum=""
 for (var i=0; i<6; i++) {
     sum+=alfavit[Math.floor(Math.random()*alfavit.length)]
 }
 console.log(sum);
+console.log("---------------------------------------------------------"); */
