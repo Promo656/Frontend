@@ -330,10 +330,16 @@ if (randomNumber[2] == 0) {
 }
 console.log("---------------------------------------------------------"); */
 
-let num = Math.floor(Math.random() * 900 + 100).toString()
+/* let num = Math.floor(Math.random() * 900 + 100).toString()
 let result = ""
 for (let i = 0; i < num.length; i++) {
     if (num[i] % 2 !== 0) {
         console.log(num[i]);
     }
 }
+console.log("---------------------------------------------------------");  */
+
+let n1=5
+let n2=8
+let n3=10
+let max
