@@ -329,3 +329,11 @@ if (randomNumber[2] == 0) {
     console.log(randomNumber)
 }
 console.log("---------------------------------------------------------"); */
+
+let num = Math.floor(Math.random() * 900 + 100).toString()
+let result = ""
+for (let i = 0; i < num.length; i++) {
+    if (num[i] % 2 !== 0) {
+        console.log(num[i]);
+    }
+}
