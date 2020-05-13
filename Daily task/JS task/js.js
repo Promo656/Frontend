@@ -320,3 +320,12 @@ for (var i=0; i<6; i++) {
 }
 console.log(sum);
 console.log("---------------------------------------------------------"); */
+
+/* let randomNumber = Math.floor(Math.random() * 900 + 100).toString()
+if (randomNumber[2] == 0) {
+    console.log(randomNumber);
+} else {
+    randomNumber -= randomNumber[2]
+    console.log(randomNumber)
+}
+console.log("---------------------------------------------------------"); */
