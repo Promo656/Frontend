@@ -22,7 +22,7 @@
         let remainingLetters = word.length
         while (remainingLetters > 0) {
             alert(answerArray.join(" "))
-            let guess = prompt("Угадай букву или нажмите отмена для выхода из игры")
+            let guess = prompt("Угадай букву или нажмите отмена для выхода из игры").toLowerCase
             if (guess === null) {
                 break
             } else if (guess.length !== 1) {
