@@ -19,9 +19,10 @@
         for (let i = 0; i < word.length; i++) {
             answerArray[i] = "_"
         }
+        let turn = word.length * 2
         let remainingLetters = word.length
-        while (remainingLetters > 0) {
-            alert(answerArray.join(" "))
+        while ((remainingLetters > 0) && (turn>0)) {
+            alert(answerArray.join(" ") + " У вас попыток:"+ turn)
             let guess = prompt("Угадай букву или нажмите отмена для выхода из игры").toLowerCase
             if (guess === null) {
                 break
@@ -32,12 +33,13 @@
                     if (word[j] === guess) {
                         answerArray[j] = guess
                         remainingLetters--
+                        turn--
                     }
                 }
             }
         }
         alert(answerArray.join(" "))
-        alert("Отлично, было загадано слово "+ word)
+        alert("Отлично, было загадано слово " + word)
     </script>
 </body>
 
