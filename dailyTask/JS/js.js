@@ -339,4 +339,22 @@ for (let i = 0; i < num.length; i++) {
 }
 console.log("---------------------------------------------------------");  */
 
+let myFerstFunction=function() {
+    console.log(("Hello"))
+};
+myFerstFunction();
+console.log("---------------------------------------------------------");
 
+let sayHiTo=function(name){
+    console.log("Hi "+ name);
+}
+sayHiTo("Nick")
+sayHiTo("Anna")
+console.log("---------------------------------------------------------");
+
+let drawCat= function(howManyTimes){
+    for(let i=0; i<howManyTimes; i++) {
+        console.log(i+ " =^.^=");
+    }
+}
+drawCat(5)
