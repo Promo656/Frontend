@@ -407,3 +407,30 @@ var double=function (ch) {
     }
     fiftLetter("Nikola")
     console.log("---------------------------------------------------------") */
+
+/*     let medalForScore=function(score){
+        if (score<3){
+            return console.log("Bronz");
+        }
+        if (score<7){
+            return console.log("Silver");
+        }
+        return console.log("Gold");
+    }
+
+    console.log(medalForScore(9));
+    console.log("---------------------------------------------------------") */
+
+/*     let arr1=[1,2,3,4]
+    let arr2=[1,2,3,4]
+    let arr3=[4,3,2,1,0]
+    let arr4=[4,3,2,1]
+    
+    function compare(item1,item2) {
+        if (item1.length !== item2.length) {
+            return  console.log("Length is different")
+        }
+        return item1.join("")==item2.join("")
+    }
+    console.log(compare(arr1,arr3))
+    console.log("---------------------------------------------------------") */
