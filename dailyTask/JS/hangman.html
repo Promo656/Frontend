@@ -8,39 +8,50 @@
 </head>
 
 <body>
-    <h1>Виселица</h1>
+    <h1>Hangman</h1>
     <script>
         let words = [
-            "машенька",
-
+            "wife",
+            "children",
+            "cafe",
+            "notebook"
         ]
-        let word = words[Math.floor(Math.random() * words.length)]
-        let answerArray = []
-        for (let i = 0; i < word.length; i++) {
-            answerArray[i] = "_"
+        let emptyArray = []
+        let randomWord=function(word) {
+            return word[Math.floor(Math.random() * word.length)]
         }
-        let turn = word.length * 2
-        let remainingLetters = word.length
-        while ((remainingLetters > 0) && (turn>0)) {
-            alert(answerArray.join(" ") + " У вас попыток:"+ turn)
-            let guess = prompt("Угадай букву или нажмите отмена для выхода из игры").toLowerCase
-            if (guess === null) {
+         console.log(randomWord(words));
+        let score = function(number){
+            return randomWord.length
+        }
+         console.log(score(randomWord));
+
+        /* function fillEmptyLine(line) {
+            for (let i = 0; i < score; i++) {
+                return emptyArray[i] = "_"
+            }
+        }
+        console.log(fillEmptyLine(randomWord(words))); */
+
+
+        /* while (score > 0) {
+            alert(emptyArray.join(" "))
+            let guess = prompt("Enter the one letter")
+            if (guess == null) {
                 break
             } else if (guess.length !== 1) {
-                alert("Пожалуйста, введите одиночную букву")
+                alert("Please, enter only one letter")
             } else {
                 for (let j = 0; j < word.length; j++) {
-                    if (word[j] === guess) {
-                        answerArray[j] = guess
-                        remainingLetters--
-                        turn--
+                    if (guess === word[j]) {
+                        emptyArray[j] = guess
+                        score--
                     }
                 }
             }
-            turn--
         }
-        alert(answerArray.join(" "))
-        alert("Отлично, было загадано слово " + word)
+        alert(word)
+        alert("You win!") */
     </script>
 </body>
 
