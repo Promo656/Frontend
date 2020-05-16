@@ -339,7 +339,7 @@ for (let i = 0; i < num.length; i++) {
 }
 console.log("---------------------------------------------------------");  */
 
-let myFerstFunction=function() {
+/* let myFerstFunction=function() {
     console.log(("Hello"))
 };
 myFerstFunction();
@@ -358,3 +358,43 @@ let drawCat= function(howManyTimes){
     }
 }
 drawCat(5)
+console.log("---------------------------------------------------------");
+let whatToDraw=function(howManyTimes, what) {
+    for (let i=0; i<howManyTimes; i++){
+        console.log(i+ " "+ what);
+    }
+}
+whatToDraw(10, "@@@@@@")
+console.log("---------------------------------------------------------");
+
+var double=function (ch) {
+    return ch * 2
+    }
+    console.log(double(5))
+    console.log(double(double(3)))
+    console.log("---------------------------------------------------------") */
+
+/*     let pickRandomWord=function(words) {
+        return words[Math.floor(Math.random()*words.length)]
+    }
+    var randomWords=[
+        "World",
+        "Planet",
+        "Monkey",
+        "Frog",
+        1,
+        2,
+        3
+    ]
+    console.log(pickRandomWord(randomWords))
+    console.log(pickRandomWord(["Dima","Vova","Kolya"]))
+    console.log("---------------------------------------------------------") */
+
+/*     function multy(n1,n2) {
+        return n1*n2
+    }
+    function sum(n3,n4) {
+        return n3+n4
+    }
+
+    console.log(multy(5,4)+sum(8,2)) */
