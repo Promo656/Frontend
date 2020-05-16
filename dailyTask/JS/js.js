@@ -434,3 +434,5 @@ var double=function (ch) {
     }
     console.log(compare(arr1,arr3))
     console.log("---------------------------------------------------------") */
+
+    
