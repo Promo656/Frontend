@@ -396,5 +396,14 @@ var double=function (ch) {
     function sum(n3,n4) {
         return n3+n4
     }
+    console.log(multy(5,4)+sum(8,2))
+    console.log("---------------------------------------------------------") */
 
-    console.log(multy(5,4)+sum(8,2)) */
+/*     var fiftLetter=function(name){
+        if (name.langth<5) {
+            return 
+        }
+        return console.log("Fifth letters is: "+ name[4]);
+    }
+    fiftLetter("Nikola")
+    console.log("---------------------------------------------------------") */
