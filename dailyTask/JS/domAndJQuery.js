@@ -35,5 +35,16 @@ $("p").hide()
 $("p").fadeIn(3000)
 console.log("----------------------------------------------") */
 
-$("p").fadeOut(3000).delay(4000).fadeIn(3000)
+/* $("p").fadeOut(3000).delay(1000).fadeIn(3000)
 $("h1").fadeTo(1000,0.1)
+console.log("----------------------------------------------") */
+
+/* let leftOffSet=0
+let moveHeading=function(){
+    $("p").offset({left:leftOffSet})
+    leftOffSet++
+    if (leftOffSet>200){
+        leftOffSet=0
+    }
+}
+setInterval(moveHeading,30) */
