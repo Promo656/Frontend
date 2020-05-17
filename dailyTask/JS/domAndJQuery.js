@@ -22,7 +22,7 @@ for (let i=0; i<5; i++) {
 $("h1").fadeOut(2000)
 $("h1").fadeIn(2000)*/
 
-let arr1 = [
+/* let arr1 = [
     "Vova",
     "Dima",
     "Egor"
@@ -33,3 +33,7 @@ for (let i = 0; i < arr1.length; i++) {
 $("h1").text("Hello, fiends")
 $("p").hide()
 $("p").fadeIn(3000)
+console.log("----------------------------------------------") */
+
+$("p").fadeOut(3000).delay(4000).fadeIn(3000)
+$("h1").fadeTo(1000,0.1)
