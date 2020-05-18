@@ -62,8 +62,13 @@ $("html").click(clickHandler) */
         top: event.pageY
     })
 }) */
-$("html").mousemove(
+/* $("html").mousemove(
     function(event){
         $("body").text("x: "+ event.pageX+ "y: " +event.pageY)
     }
-)
+) */
+
+let move = function (event) {
+    $("div").text(event.pageX)
+}
+$("html").mousemove(move)
