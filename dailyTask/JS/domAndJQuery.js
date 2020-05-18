@@ -47,8 +47,23 @@ let moveHeading=function(){
         leftOffSet=0
     }
 }
-setInterval(moveHeading,30) */
-let clickHandler= function(event){
+setInterval(moveHeading,30)
+console.log("----------------------------------------------") */
+
+
+/* let clickHandler= function(event){
     console.log("Click! "+event.pageX+" "+event.pageY);
 }
-$("html").click(clickHandler)
+$("html").click(clickHandler) */
+
+/* $("html").mousemove( function (event){
+    $("#heading").offset({
+        left: event.pageX,
+        top: event.pageY
+    })
+}) */
+$("html").mousemove(
+    function(event){
+        $("body").text("x: "+ event.pageX+ "y: " +event.pageY)
+    }
+)
