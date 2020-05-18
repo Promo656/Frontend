@@ -48,3 +48,7 @@ let moveHeading=function(){
     }
 }
 setInterval(moveHeading,30) */
+let clickHandler= function(event){
+    console.log("Click! "+event.pageX+" "+event.pageY);
+}
+$("html").click(clickHandler)
