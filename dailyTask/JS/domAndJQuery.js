@@ -68,7 +68,13 @@ $("html").click(clickHandler) */
     }
 ) */
 
-let move = function (event) {
+/* let move = function (event) {
     $("div").text(event.pageX)
 }
-$("html").mousemove(move)
+$("html").mousemove(move) */
+
+$("div").hover(
+    function(){
+        $("div").fadeOut(3000)
+    }
+)
