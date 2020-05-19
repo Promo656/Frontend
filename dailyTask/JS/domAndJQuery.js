@@ -73,8 +73,9 @@ $("html").click(clickHandler) */
 }
 $("html").mousemove(move) */
 
-$("div").hover(
+/* $("div").hover(
     function(){
         $("div").fadeOut(3000)
     }
-)
+) */
+
