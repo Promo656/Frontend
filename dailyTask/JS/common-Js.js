@@ -435,4 +435,9 @@ var double=function (ch) {
     console.log(compare(arr1,arr3))
     console.log("---------------------------------------------------------") */
 
-    
+    let Car=function(x,y){
+        this.x=x
+        this.y=y
+    }
+    let tesla=new Car(10,20)
+    console.log(tesla);

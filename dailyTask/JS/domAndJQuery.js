@@ -78,4 +78,30 @@ $("html").mousemove(move) */
         $("div").fadeOut(3000)
     }
 ) */
+/* $("html").mousemove(function(event){
+    $("html").text("x: "+ event.offsetX+ "y:"+ event.offsetY)
+    
+}) 
+console.log("----------------------------------------------")*/
+
+/* let dog={
+    name:"Sun",
+    legs:4,
+    isAwesome:true
+}
+let speak=function(){
+    return this.sound+" My nami is "+ this.name
+}
+let cat={
+    sound:"Miau",
+    name:"Moon",
+    speak:speak
+}
+dog.age=6
+dog.bark=function(){
+    return "Gav Gav!"+ this.name
+}
+console.log(dog.bark());
+console.log(cat.speak())
+console.log("----------------------------------------------") */
 
