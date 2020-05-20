@@ -12,7 +12,7 @@ $("html").mousemove(function(event){
 })
 let canvas=document.getElementById("canvas")
 let ctx=canvas.getContext("2d")
-ctx.fillStyle="Red"
+ctx.fillStyle="Green"
 ctx.fillRect(25,0,50,50)
 ctx.fillRect(45,50,10,30)
 ctx.fillRect(0,70,100,10)
