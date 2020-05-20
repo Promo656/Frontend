@@ -22,7 +22,7 @@ ctx.fillRect(20,80,60,60)
 ctx.fillRect(20,140,10,100)
 ctx.fillRect(70,140,10,100) */
 
-let canvas2=document.getElementById("canvas2")
+/* let canvas2=document.getElementById("canvas2")
 let ctx=canvas2.getContext("2d")
 ctx.strokeStyle="Red"
 ctx.lineWidth="5"
@@ -31,4 +31,4 @@ ctx.moveTo(150,150)
 ctx.lineTo(200,200)
 ctx.moveTo(200,150)
 ctx.lineTo(150,200)
-ctx.stroke()
+ctx.stroke() */
