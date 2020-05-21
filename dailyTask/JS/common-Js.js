@@ -442,7 +442,7 @@ var double=function (ch) {
     let tesla=new Car(10,20)
     console.log(tesla); */
 
-    let func1=function(){
+/*     let func1=function(){
         return prompt("WhatsUp?")
     }
 
@@ -450,4 +450,18 @@ var double=function (ch) {
         return "I am:"
     }
 
-    alert(func2()+func1())
+    alert(func2()+func1()) */
+
+    let func1=function(){
+        return 4*3
+    }
+
+    let func2=function(){
+        return 10+20
+    }
+    
+    let sum=function(n1,n2){
+        return n1+n2
+    }
+
+    alert(sum(func1(),func2()))
