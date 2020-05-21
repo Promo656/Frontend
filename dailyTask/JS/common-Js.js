@@ -441,3 +441,13 @@ var double=function (ch) {
     }
     let tesla=new Car(10,20)
     console.log(tesla); */
+
+    let func1=function(){
+        return prompt("WhatsUp?")
+    }
+
+    let func2=function(){
+        return "I am:"
+    }
+
+    alert(func2()+func1())
