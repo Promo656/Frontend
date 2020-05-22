@@ -11,9 +11,20 @@ function calculateAge(date1, date2) {
         return "You are " + (date2 - date1) + " years old."
     }
 }
-calculateAge(1994,2020);
+calculateAge(1994, 2020);
 
-function greet(){
+function greet() {
     return "hello world!"
+}
+greet()
+
+function myFirstKata(a, b) {
+    if (typeof (a) !== "number" && typeof (b) !== "number") {
+        return false
+    } else if (typeof (a) == "string" || typeof (b) == "string") {
+        return false
+    } else {
+        return a % b + b % a
     }
-    greet()
+}
+myFirstKata()
