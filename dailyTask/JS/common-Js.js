@@ -466,4 +466,7 @@ var double=function (ch) {
 
     alert(sum(func1(),func2())) */
 
-
+function str(n) {
+    return n.toString();
+}
+str()
