@@ -17,7 +17,7 @@ function greet() {
     return "hello world!"
 }
 greet()
-
+/*----------------------------------------------------------------------------- */
 function myFirstKata(a, b) {
     if (typeof (a) !== "number" && typeof (b) !== "number") {
         return false
@@ -28,3 +28,24 @@ function myFirstKata(a, b) {
     }
 }
 myFirstKata()
+/*----------------------------------------------------------------------------- */
+/* let odd = []
+function count(number) {
+    for (; number > 0; number--) {
+        if (number % 2 !== 0) {
+        return odd += odd.push(number)
+
+        }
+    }
+}
+console.log(count(4))
+console.log(odd); */
+/*----------------------------------------------------------------------------- */
+/* let arr = []
+
+for (let i = 0; i < 5; i++) {
+    arr[i]+=i
+}
+
+
+console.log(arr) */
