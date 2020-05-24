@@ -52,3 +52,12 @@ console.log(numberToPower(10,4)) */
 }
 add() */
 /*----------------------------------------------------------------------------- */
+
+/* function pointsPer48(ppg, mpg) {
+    if (ppg && mpg !== 0) {
+        return parseFloat(((ppg * 48) / mpg).toFixed(1))
+    } else {
+        return 0
+    }
+}
+pointsPer48(12,15) */
