@@ -1,4 +1,4 @@
-function calculateAge(date1, date2) {
+/* function calculateAge(date1, date2) {
     if (date2 - date1 == 1) {
         return "You are " + (date2 - date1) + " year old."
     } else if (date1 - date2 == 1) {
@@ -16,9 +16,9 @@ calculateAge(1994, 2020);
 function greet() {
     return "hello world!"
 }
-greet()
+greet() */
 /*----------------------------------------------------------------------------- */
-function myFirstKata(a, b) {
+/* function myFirstKata(a, b) {
     if (typeof (a) !== "number" && typeof (b) !== "number") {
         return false
     } else if (typeof (a) == "string" || typeof (b) == "string") {
@@ -27,25 +27,33 @@ function myFirstKata(a, b) {
         return a % b + b % a
     }
 }
-myFirstKata()
+myFirstKata() */
 /*----------------------------------------------------------------------------- */
 /* let odd = []
 function count(number) {
     for (; number > 0; number--) {
         if (number % 2 !== 0) {
-        return odd += odd.push(number)
-
+        return odd.push(number)
         }
     }
 }
-console.log(count(4))
-console.log(odd); */
+console.log(count(9)) */
+
 /*----------------------------------------------------------------------------- */
 /* let arr = []
-
-for (let i = 0; i < 5; i++) {
-    arr[i]+=i
+function num(n1,n2){
+    for (let i = 0; i < n2-n1+1; i++) {
+        return arr[i]+=arr.push(i+n1)
+    }
 }
+console.log(num(3,8)) */
+/*----------------------------------------------------------------------------- */
 
-
-console.log(arr) */
+function num(n) {
+    sum = 0
+    for (let i = 0; i <= n; i++) {
+        sum += i
+    }
+    return sum
+}
+console.log(num(3))
