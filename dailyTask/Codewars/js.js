@@ -13,11 +13,8 @@
 }
 calculateAge(1994, 2020);
 
-function greet() {
-    return "hello world!"
-}
-greet() */
 /*----------------------------------------------------------------------------- */
+
 /* function myFirstKata(a, b) {
     if (typeof (a) !== "number" && typeof (b) !== "number") {
         return false
@@ -28,25 +25,6 @@ greet() */
     }
 }
 myFirstKata() */
-/*----------------------------------------------------------------------------- */
-/* let odd = []
-function count(number) {
-    for (; number > 0; number--) {
-        if (number % 2 !== 0) {
-        return odd.push(number)
-        }
-    }
-}
-console.log(count(9)) */
-
-/*----------------------------------------------------------------------------- */
-/* let arr = []
-function num(n1,n2){
-    for (let i = 0; i < n2-n1+1; i++) {
-        return arr[i]+=arr.push(i+n1)
-    }
-}
-console.log(num(3,8)) */
 /*----------------------------------------------------------------------------- */
 
 /* function num(n) {
@@ -59,11 +37,18 @@ console.log(num(3,8)) */
 console.log(num(3)) */
 /*----------------------------------------------------------------------------- */
 
-function numberToPower(number, power) {
+/* function numberToPower(number, power) {
     let sum = 1
     for (let i = 0; i < power; i++) {
         sum *= number
     }
     return sum
 }
-console.log(numberToPower(10,4))
+console.log(numberToPower(10,4)) */
+/*----------------------------------------------------------------------------- */
+
+/* function add(a, b){
+	return (a == b)
+}
+add() */
+/*----------------------------------------------------------------------------- */
