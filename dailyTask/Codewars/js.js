@@ -49,11 +49,21 @@ function num(n1,n2){
 console.log(num(3,8)) */
 /*----------------------------------------------------------------------------- */
 
-function num(n) {
+/* function num(n) {
     sum = 0
     for (let i = 0; i <= n; i++) {
         sum += i
     }
     return sum
 }
-console.log(num(3))
+console.log(num(3)) */
+/*----------------------------------------------------------------------------- */
+
+function numberToPower(number, power) {
+    let sum = 1
+    for (let i = 0; i < power; i++) {
+        sum *= number
+    }
+    return sum
+}
+console.log(numberToPower(10,4))
