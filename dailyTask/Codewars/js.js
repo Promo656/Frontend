@@ -92,7 +92,7 @@ litres(11.8) */
 console.log(arrayPlusArray([1, 2, 3], [4, 5, 6])) */
 /*----------------------------------------------------------------------------- */
 
-function squareOrSquareRoot(arr1) {
+/* function squareOrSquareRoot(arr1) {
     let arr2 = []
     for (let i = 0; i < arr1.length; i++) {
         if (Number.isInteger(Math.sqrt(arr1[i]))) {
@@ -104,4 +104,6 @@ function squareOrSquareRoot(arr1) {
     }
     return arr2
 }
-console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1]))
+console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1])) */
+/*----------------------------------------------------------------------------- */
+
