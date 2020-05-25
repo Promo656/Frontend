@@ -61,3 +61,8 @@ add() */
     }
 }
 pointsPer48(12,15) */
+/*----------------------------------------------------------------------------- */
+function isDivideBy(number, a, b) {
+    return number % a == 0 && number % b == 0
+}
+isDivideBy(12, 4, 3)
