@@ -73,7 +73,20 @@ isDivideBy(12, 4, 3) */
 };
   zeroFuel(100,50,1) */
 /*----------------------------------------------------------------------------- */
-function litres(time) {
+
+/* function litres(time) {
     return Math.floor(time * 0.5)
 }
-litres(11.8)
+litres(11.8) */
+/*----------------------------------------------------------------------------- */
+
+function arrayPlusArray(arr1, arr2) {
+    let sum1 = 0
+    let sum2 = 0
+    for (let i = 0; i < arr1.length; i++) {
+        sum2 += arr2[i]
+        sum1 += arr1[i]
+    }
+    return sum1 + sum2
+}
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]))
