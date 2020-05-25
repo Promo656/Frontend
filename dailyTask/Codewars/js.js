@@ -73,3 +73,7 @@ isDivideBy(12, 4, 3) */
 };
   zeroFuel(100,50,1) */
 /*----------------------------------------------------------------------------- */
+function litres(time) {
+    return Math.floor(time * 0.5)
+}
+litres(11.8)
