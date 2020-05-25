@@ -107,3 +107,5 @@ console.log(arrayPlusArray([1, 2, 3], [4, 5, 6])) */
 console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1])) */
 /*----------------------------------------------------------------------------- */
 
+function superSize(num){
+}
