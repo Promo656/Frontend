@@ -80,7 +80,7 @@ isDivideBy(12, 4, 3) */
 litres(11.8) */
 /*----------------------------------------------------------------------------- */
 
-function arrayPlusArray(arr1, arr2) {
+/* function arrayPlusArray(arr1, arr2) {
     let sum1 = 0
     let sum2 = 0
     for (let i = 0; i < arr1.length; i++) {
@@ -89,4 +89,19 @@ function arrayPlusArray(arr1, arr2) {
     }
     return sum1 + sum2
 }
-console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]))
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6])) */
+/*----------------------------------------------------------------------------- */
+
+function squareOrSquareRoot(arr1) {
+    let arr2 = []
+    for (let i = 0; i < arr1.length; i++) {
+        if (Number.isInteger(Math.sqrt(arr1[i]))) {
+            arr2.push(Math.sqrt(arr1[i]))
+        } else {
+            arr2.push(arr1[i] * arr1[i])
+        }
+
+    }
+    return arr2
+}
+console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1]))
