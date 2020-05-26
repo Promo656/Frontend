@@ -107,7 +107,7 @@ console.log(arrayPlusArray([1, 2, 3], [4, 5, 6])) */
 console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1])) */
 /*----------------------------------------------------------------------------- */
 
-let arr2=[6,3,8,9,1,4,7]
+/* let arr2=[6,3,8,9,1,4,7]
 let min=0
 let max=0
 for(let i=0; i<arr2.length; i++){
@@ -117,4 +117,9 @@ for(let i=0; i<arr2.length; i++){
         min=arr2[i+1]
     }
 }
-console.log(min+max)
+console.log(min+max) */
+
+let a = 1;
+let b = 2;
+[a, b] = [b, a]
+console.log(a, b);
