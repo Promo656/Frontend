@@ -118,8 +118,22 @@ for(let i=0; i<arr2.length; i++){
     }
 }
 console.log(min+max) */
+/* var arr3 = [6,3,2,1,5,9,7,4,8];
 
-let a = 1;
-let b = 2;
-[a, b] = [b, a]
-console.log(a, b);
+for (var i = 0; i < arr3.length; i++) {
+    if (arr3[i] > arr3[0]) {
+        arr3[0] = arr3[i];
+    }
+
+}
+alert(arr3[0]); */
+
+function findMax(arr3) {
+    for(var i = 0; i < arr3.length; i++) {
+        if (arr3[i] > arr3[0]) {
+            arr3[0] = arr3[i];
+        }
+    }
+    return alert(arr3[0]);
+}
+console.log(findMax([3,6,9,2,8, 45]))

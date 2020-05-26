@@ -41,11 +41,13 @@
 </head>
 
 <body>
+    <!-- Задание № 1, 2, 3, 4. -->
     <form>
         <input type="search" id="search" placeholder="Введите запрос">
         <input type="submit" id="submit" value="Найти">
     </form>
     <script>
+        /* Задание № 5 */
         let arr1 = [
             {
                 name: "Alfa",
@@ -64,6 +66,7 @@
                 age: 50
             }
         ]
+
         submit.onclick = function () {
             if ((document.getElementById("search").value == "google")) {
                 return alert("Yandex круче. Но это не точно " + arr1[0].name)
@@ -71,23 +74,48 @@
                 return alert(document.getElementById("search").value)
             }
         }
+        setTimeout(submit.onclick, 3000)
+
+        /* Задание № 6 */
         function superSum(a, b) {
             return alert(a + b)
         }
 
-/*         let arr2=[6,3,8,9,1,4,7]
-        let min=0
-        let max=0
-        for(let i=0; i<arr2.length; i++){
-            if (arr2[i]>arr2[i+1]){
-                max=arr2[i]
-            } else {
-                min=arr2[i+1]
+        /* Задание № 7.1-Поиск максимального */
+        var arr3 = [6, 3, 2, 1, 5, 9, 7, 4, 8];
+        for (var i = 0; i < arr3.length; i++) {
+            if (arr3[i] > arr3[0]) {
+                arr3[0] = arr3[i];
             }
         }
-document.write(min+max) */
+        alert(arr3[0]);
 
+        /* Задание № 7.2-Поиск минимального */
+        var arr3 = [6, 3, 2, 1, 5, 9, 7, 4, 8];
+        for (var i = 0; i < arr3.length; i++) {
+            if (arr3[i] < arr3[0]) {
+                arr3[0] = arr3[i];
+            }
+        }
+        alert(arr3[0]);
 
+        /* Задание № 8. Замена значений переменных методом "Деструктурирующее присваивание" */
+        let a = "XXX";
+        let b = "YYY";
+        [a, b] = [b, a]
+        console.log(a);
+        console.log(b);
+
+        /* Задание № 9.*/
+        function findMax(arr3) {
+            for(var i = 0; i < arr3.length; i++) {
+                if (arr3[i] > arr3[0]) {
+                    arr3[0] = arr3[i];
+                }
+            }
+            return alert(arr3[0]);
+        }
+        findMax([3,6,9,2,8])
     </script>
 </body>
 
