@@ -19,7 +19,7 @@
             align-items: center;
         }
 
-        input#submit {
+        input#btnSubmit {
             margin: 5px;
             background-color: green;
             color: white;
@@ -41,12 +41,24 @@
 </head>
 
 <body>
-    <!-- Задание № 1, 2, 3, 4. -->
+    <!-- Задание № 1, 2, 3, 4, 10. -->
     <form>
         <input type="search" id="search" placeholder="Введите запрос">
-        <input type="submit" id="submit" onclick="func()" value="Найти">
+        <input type="submit" id="btnSubmit" onclick="func()" value="Найти">
     </form>
     <script>
+        let submit = document.getElementById("btnSubmit");
+        submit.onclick = function () {
+            setTimeout(function func() {
+                if ((document.getElementById("search").value == "google")) {
+                    return alert("Yandex круче. Но это не точно " + arr1[0].name);
+                } else {
+                    return alert(document.getElementById("search").value);
+                }
+            }, 3000);
+            return false;
+        }
+
         /* Задание № 5 */
         let arr1 = [
             {
@@ -66,7 +78,6 @@
                 age: 50
             }
         ]
-
 
         /* Задание № 6 */
         function superSum(a, b) {
@@ -107,27 +118,6 @@
             }
             return alert(arr3[0]);
         }
-
-        /*         submit.onclick = function () {
-                    setTimeout(func, 2000)
-                } */
-        /*         let func = function () {
-                    if ((document.getElementById("search").value == "google")) {
-                        return alert("Yandex круче. Но это не точно " + arr1[0].name)
-                    } else {
-                        return alert(document.getElementById("search").value)
-                    }
-                } */
-
-        function func() {
-            if ((document.getElementById("search").value == "google")) {
-                return alert("Yandex круче. Но это не точно " + arr1[0].name)
-            } else {
-                return alert(document.getElementById("search").value)
-            }
-        }
-        let n=setTimeout(func,2000)
-
     </script>
 </body>
 
