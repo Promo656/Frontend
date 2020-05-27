@@ -44,7 +44,7 @@
     <!-- Задание № 1, 2, 3, 4. -->
     <form>
         <input type="search" id="search" placeholder="Введите запрос">
-        <input type="submit" id="submit" value="Найти">
+        <input type="submit" id="submit" onclick="func()" value="Найти">
     </form>
     <script>
         /* Задание № 5 */
@@ -67,14 +67,6 @@
             }
         ]
 
-        submit.onclick = function () {
-            if ((document.getElementById("search").value == "google")) {
-                return alert("Yandex круче. Но это не точно " + arr1[0].name)
-            } else {
-                return alert(document.getElementById("search").value)
-            }
-        }
-        setTimeout(submit.onclick, 3000)
 
         /* Задание № 6 */
         function superSum(a, b) {
@@ -88,7 +80,7 @@
                 arr3[0] = arr3[i];
             }
         }
-        alert(arr3[0]);
+        console.log((arr3[0]))
 
         /* Задание № 7.2-Поиск минимального */
         var arr3 = [6, 3, 2, 1, 5, 9, 7, 4, 8];
@@ -97,7 +89,7 @@
                 arr3[0] = arr3[i];
             }
         }
-        alert(arr3[0]);
+        console.log((arr3[0]))
 
         /* Задание № 8. Замена значений переменных методом "Деструктурирующее присваивание" */
         let a = "XXX";
@@ -108,14 +100,34 @@
 
         /* Задание № 9.*/
         function findMax(arr3) {
-            for(var i = 0; i < arr3.length; i++) {
+            for (var i = 0; i < arr3.length; i++) {
                 if (arr3[i] > arr3[0]) {
                     arr3[0] = arr3[i];
                 }
             }
             return alert(arr3[0]);
         }
-        findMax([3,6,9,2,8])
+
+        /*         submit.onclick = function () {
+                    setTimeout(func, 2000)
+                } */
+        /*         let func = function () {
+                    if ((document.getElementById("search").value == "google")) {
+                        return alert("Yandex круче. Но это не точно " + arr1[0].name)
+                    } else {
+                        return alert(document.getElementById("search").value)
+                    }
+                } */
+
+        function func() {
+            if ((document.getElementById("search").value == "google")) {
+                return alert("Yandex круче. Но это не точно " + arr1[0].name)
+            } else {
+                return alert(document.getElementById("search").value)
+            }
+        }
+        let n=setTimeout(func,2000)
+
     </script>
 </body>
 
