@@ -127,8 +127,8 @@ for (var i = 0; i < arr3.length; i++) {
 
 }
 alert(arr3[0]); */
-
-function findMax(arr3) {
+/*----------------------------------------------------------------------------- */
+/* function findMax(arr3) {
     for(var i = 0; i < arr3.length; i++) {
         if (arr3[i] > arr3[0]) {
             arr3[0] = arr3[i];
@@ -136,4 +136,6 @@ function findMax(arr3) {
     }
     return alert(arr3[0]);
 }
-console.log(findMax([3,6,9,2,8, 45]))
+console.log(findMax([3,6,9,2,8, 45])) */
+/*----------------------------------------------------------------------------- */
+
