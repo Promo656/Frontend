@@ -139,3 +139,19 @@ alert(arr3[0]); */
 console.log(findMax([3,6,9,2,8, 45])) */
 /*----------------------------------------------------------------------------- */
 
+function basicOp(operation, value1, value2)
+{
+while (operation=="-"){
+return value1-value2
+}
+while (operation=="+"){
+return value1+value2
+}
+while (operation=="*"){
+return value1*value2
+}
+while (operation=="/"){
+return value1/value2
+}
+}
+basicOp()
