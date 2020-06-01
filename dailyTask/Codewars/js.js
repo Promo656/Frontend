@@ -157,11 +157,23 @@ return value1/value2
 basicOp() */
 /*----------------------------------------------------------------------------- */
 
-let func = function (name) {
+/* let func = function (name) {
     if (name == "Egor") {
         return alert("HI " + name)
     } else {
         return alert("Hello stranger")
     }
 }
-func(Egor)
+func(Egor) */
+/*----------------------------------------------------------------------------- */
+
+function positiveSum(arr1) {
+    let sum = 0
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] > 0) {
+            sum += arr1[i]
+        }
+    }
+    return sum
+}
+positiveSum([1, 2, 3, 4, 5]) 
