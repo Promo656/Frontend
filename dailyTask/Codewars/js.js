@@ -179,11 +179,17 @@ func(Egor) */
 positiveSum([1, 2, 3, 4, 5]) */
 /*----------------------------------------------------------------------------- */
 
-function maps(arr1) {
+/* function maps(arr1) {
     let arr2 = []
     for (let i = 0; i < arr1.length; i++) {
         arr2.push(arr1[i] * 2)
     }
     return arr2
 }
-maps([1, 2, 3])
+maps([1, 2, 3]) */
+/*----------------------------------------------------------------------------- */
+
+function numberToString(num) {
+    return num.toString()
+}
+numberToString(76)
