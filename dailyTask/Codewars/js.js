@@ -201,11 +201,21 @@ numberToString(76) */
 isReallyNaN(4) */
 /*----------------------------------------------------------------------------- */
 
-function squareSum(numbers) {
+/* function squareSum(numbers) {
     let sum = 0
     for (let i = 0; i < numbers.length; i++) {
         sum += numbers[i] * numbers[i]
     }
     return sum
 }
-squareSum([1,2,2])
+squareSum([1,2,2]) */
+/*----------------------------------------------------------------------------- */
+
+function grow(x){
+    let sum=1
+    for (let i=0; i<x.length; i++){
+    sum*=x[i]
+    }
+    return sum
+    }
+    grow(2,3,4)
