@@ -189,7 +189,14 @@ positiveSum([1, 2, 3, 4, 5]) */
 maps([1, 2, 3]) */
 /*----------------------------------------------------------------------------- */
 
-function numberToString(num) {
+/* function numberToString(num) {
     return num.toString()
 }
-numberToString(76)
+numberToString(76) */
+/*----------------------------------------------------------------------------- */
+
+/* function isReallyNaN(val) {
+    return Number.isNaN(val)
+};
+isReallyNaN(4) */
+/*----------------------------------------------------------------------------- */
