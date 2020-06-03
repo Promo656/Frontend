@@ -211,11 +211,22 @@ isReallyNaN(4) */
 squareSum([1,2,2]) */
 /*----------------------------------------------------------------------------- */
 
-function grow(x){
+/* function grow(x){
     let sum=1
     for (let i=0; i<x.length; i++){
     sum*=x[i]
     }
     return sum
     }
-    grow(2,3,4)
+    grow(2,3,4) */
+/*----------------------------------------------------------------------------- */
+
+function check(a, x) {
+    for (let i = 0; i < a.length; i++) {
+        while (a[i] == x) {
+            return true
+        }
+    }
+    return false
+}
+check([1, 2, 3], 2)
