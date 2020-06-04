@@ -221,7 +221,7 @@ squareSum([1,2,2]) */
     grow(2,3,4) */
 /*----------------------------------------------------------------------------- */
 
-function check(a, x) {
+/* function check(a, x) {
     for (let i = 0; i < a.length; i++) {
         while (a[i] == x) {
             return true
@@ -229,4 +229,21 @@ function check(a, x) {
     }
     return false
 }
-check([1, 2, 3], 2)
+check([1, 2, 3], 2) */
+/*----------------------------------------------------------------------------- */
+let newarr = []
+function invert(array) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] < 0) {
+            newarr.push(-array[i])
+        } else if (array[i] == 0) {
+            newarr.push(0)
+        } else if (array[i] > 0) {
+            newarr.push(-array[i])
+        } else if (array[i]=="null"){
+            newarr.push([])
+        }
+    }
+    return newarr
+}
+invert([1, 2, 3])
