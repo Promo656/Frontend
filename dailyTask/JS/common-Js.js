@@ -489,3 +489,15 @@ function ansno(){
 ask("What your answer?",ansok, ansno) */
 /*----------------------------------------------------------------------------- */
 
+function ask(question, yes, no){
+    if(confirm(question)){
+        yes()
+    } else {
+        no()
+    }
+}
+
+ask("What answer",
+function(){alert("Answer Yes")},
+function(){alert("Answer NO")}
+)
