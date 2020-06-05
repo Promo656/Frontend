@@ -466,7 +466,26 @@ var double=function (ch) {
 
     alert(sum(func1(),func2())) */
 
-function str(n) {
+/* function str(n) {
     return n.toString();
 }
-str()
+str() */
+/*----------------------------------------------------------------------------- */
+
+/* function ask(question, yes, no) {
+    if (confirm(question)){
+        yes()
+    } else {
+        no()
+    }
+}
+function ansok(){
+    alert("Ok")
+}
+function ansno(){
+    alert("No")
+}
+
+ask("What your answer?",ansok, ansno) */
+/*----------------------------------------------------------------------------- */
+

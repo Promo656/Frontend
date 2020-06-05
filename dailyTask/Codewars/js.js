@@ -231,7 +231,8 @@ squareSum([1,2,2]) */
 }
 check([1, 2, 3], 2) */
 /*----------------------------------------------------------------------------- */
-let newarr = []
+
+/* let newarr = []
 function invert(array) {
     for (let i = 0; i < array.length; i++) {
         if (array[i] < 0) {
@@ -246,4 +247,6 @@ function invert(array) {
     }
     return newarr
 }
-invert([1, 2, 3])
+invert([1, 2, 3]) */
+/*----------------------------------------------------------------------------- */
+
