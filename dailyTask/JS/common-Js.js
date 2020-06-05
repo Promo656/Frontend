@@ -489,7 +489,7 @@ function ansno(){
 ask("What your answer?",ansok, ansno) */
 /*----------------------------------------------------------------------------- */
 
-function ask(question, yes, no){
+/* function ask(question, yes, no){
     if(confirm(question)){
         yes()
     } else {
@@ -500,4 +500,21 @@ function ask(question, yes, no){
 ask("What answer",
 function(){alert("Answer Yes")},
 function(){alert("Answer NO")}
-)
+) */
+/*----------------------------------------------------------------------------- */
+
+const makePizza = function (title, cb) {
+    console.log(`Заказ на приготовление пиццы «${title}» получен. Начинаем готовить…`);
+    setTimeout(cb, 3000);
+}
+
+const readBook = function () {
+    console.log('Читаю книгу «Колдун и кристалл»…');
+}
+
+const eatPizza = function () {
+    console.log('Ура! Пицца готова, пора подкрепиться.');
+}
+
+makePizza('Пеперонни', eatPizza);
+readBook();
