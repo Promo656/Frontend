@@ -503,7 +503,7 @@ function(){alert("Answer NO")}
 ) */
 /*----------------------------------------------------------------------------- */
 
-const makePizza = function (title, cb) {
+/* const makePizza = function (title, cb) {
     console.log(`Заказ на приготовление пиццы «${title}» получен. Начинаем готовить…`);
     setTimeout(cb, 3000);
 }
@@ -517,4 +517,12 @@ const eatPizza = function () {
 }
 
 makePizza('Пеперонни', eatPizza);
-readBook();
+readBook(); */
+/*----------------------------------------------------------------------------- */
+
+function doHomework(name, cb){
+    console.log(`Starting my ${name} homework`);
+    cb()
+}
+
+doHomework("math")
