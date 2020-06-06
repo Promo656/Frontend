@@ -401,7 +401,7 @@ var double=function (ch) {
 
 /*     var fiftLetter=function(name){
         if (name.langth<5) {
-            return 
+            return
         }
         return console.log("Fifth letters is: "+ name[4]);
     }
@@ -425,7 +425,7 @@ var double=function (ch) {
     let arr2=[1,2,3,4]
     let arr3=[4,3,2,1,0]
     let arr4=[4,3,2,1]
-    
+
     function compare(item1,item2) {
         if (item1.length !== item2.length) {
             return  console.log("Length is different")
@@ -459,7 +459,7 @@ var double=function (ch) {
     let func2=function(){
         return 10+20
     }
-    
+
     let sum=function(n1,n2){
         return n1+n2
     }
@@ -520,9 +520,34 @@ makePizza('Пеперонни', eatPizza);
 readBook(); */
 /*----------------------------------------------------------------------------- */
 
-function doHomework(name, cb){
-    console.log(`Starting my ${name} homework`);
+/* function doHomework(name, cb) {
+    setTimeout(start(name),4000)
     cb()
 }
 
-doHomework("math")
+function start(name){
+    console.log(`Starting my ${name} homework`);
+}
+
+function finish() {
+    console.log("Finished my homework");
+}
+
+doHomework("math", finish) */
+/*----------------------------------------------------------------------------- */
+
+function call(name, cb) {
+    setTimeout(callfone(name), 1000);
+    cb()
+}
+
+function answerphone() {
+    console.log('Оставьте ваше сообщение');
+}
+
+function callfone(name){
+    console.log(`I calling you, ${name}`)
+}
+
+call("Egor",answerphone);
+
