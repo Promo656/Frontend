@@ -536,7 +536,7 @@ function finish() {
 doHomework("math", finish) */
 /*----------------------------------------------------------------------------- */
 
-function call(name, cb) {
+/* function call(name, cb) {
     setTimeout(callfone(name), 1000);
     cb()
 }
@@ -545,9 +545,23 @@ function answerphone() {
     console.log('Оставьте ваше сообщение');
 }
 
-function callfone(name){
+function callfone(name) {
     console.log(`I calling you, ${name}`)
 }
 
-call("Egor",answerphone);
+call("Egor", answerphone); */
+/*----------------------------------------------------------------------------- */
+
+function loadScript(src, callback){
+    let script=document.createElement("script")
+    script.src=src
+    document.body.append(script)
+    script.onload = function(){
+        callback(script);
+    } 
+}
+loadScript(`test.js`, function(){
+    show()
+})
+
 
