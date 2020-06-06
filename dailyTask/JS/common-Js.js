@@ -552,7 +552,7 @@ function callfone(name) {
 call("Egor", answerphone); */
 /*----------------------------------------------------------------------------- */
 
-function loadScript(src, callback){
+/* function loadScript(src, callback){
     let script=document.createElement("script")
     script.src=src
     document.body.append(script)
@@ -562,6 +562,6 @@ function loadScript(src, callback){
 }
 loadScript(`test.js`, function(){
     show()
-})
+}) */
 
 
