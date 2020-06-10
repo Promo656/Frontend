@@ -1,15 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+/* import Header from './header.js' */
+import Technologies from './header.js'
 
 function App() {
-  return (
-    <div>
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Contact</a>
-    </div>
+  return (<div>
+    {/* <Header /> */}
+    <Technologies />
+  </div>
   )
 }
+
+
+
+
 
 export default App;
