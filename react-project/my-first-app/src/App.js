@@ -5,16 +5,11 @@ import './App.css';
 function App() {
   return (
     <div>
-      one div
-    <div className="App">
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>React</li>
-      </ul>
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
     </div>
-  </div>
-  );
+  )
 }
 
 export default App;
