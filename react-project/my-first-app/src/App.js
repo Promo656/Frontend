@@ -1,18 +1,16 @@
 import React from 'react';
 import './App.css';
-/* import Header from './header.js' */
-import Technologies from './header.js'
+import Technologies from './Technologies.js'
+import Header from './header'
+
 
 function App() {
-  return (<div>
-    {/* <Header /> */}
-    <Technologies />
-  </div>
+  return (
+    <div>
+      <Header />
+      <Technologies />
+    </div>
   )
 }
-
-
-
-
 
 export default App;
