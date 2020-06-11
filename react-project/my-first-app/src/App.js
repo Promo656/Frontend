@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import Technologies from './Technologies.js'
+import Technologies from './Technologies'
 import Header from './header'
+import Footer from './Footer'
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Header />
       <Technologies />
+      <Footer />
     </div>
   )
 }
