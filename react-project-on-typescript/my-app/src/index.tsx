@@ -15,11 +15,25 @@ ReactDOM.render(
 serviceWorker.unregister();
 
 
-let a=12
-a=1334
+let a={
+    name:"Vova",
+    age:23,
+    address:{
+        city:"Moscow",
+        country:"Russia"
+    }
+}
+console.log(a.address.country)
 
 
+let b:number|string|boolean
+b=23
+b=true
+b="sdfj"
 
-
-
-
+let c: Array<number | string | boolean>
+c=[2,2312,123,123,123]
+c=["ds","sd"]
+c=[]
+c=[true, false]
+c=["dsd","sds", 23,234]
