@@ -4,20 +4,26 @@ import './App.css';
 function App() {
     return (
         <div>
-        <div>This is React APP</div>
-        <Rating/>
-        <Accordion/>
+            <AppTitle/>
+            <Rating/>
+            <Accordion/>
+            <Rating/>
         </div>
     );
 }
 
-function Hello() {
-    debugger
-alert("Hello")
+function AppTitle() {
+return <>This is React APP</>
 }
+
+function Hello() {
+    alert("Hello")
+}
+
 Hello()
 
 function Rating() {
+    console.log("Rating rendered")
     return (
         <div>
             <Star/>
@@ -28,24 +34,27 @@ function Rating() {
         </div>
     )
 }
+
 function Star() {
-return(
-    <div>
-        <div>Star</div>
-    </div>
-)
+    console.log("Star rendered")
+    return (
+        <div>
+            <div>Star</div>
+        </div>
+    )
 }
+
 function Accordion() {
-return (
-    <div>
-        <h3>Menu</h3>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-    </div>
-)
+    return (
+        <div>
+            <h3>Menu</h3>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    )
 }
 
 export default App;
