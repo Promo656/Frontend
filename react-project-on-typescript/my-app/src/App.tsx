@@ -3,7 +3,11 @@ import './App.css';
 
 function App() {
     return (
+        <div>
         <div>This is React APP</div>
+        <Rating/>
+        <Accordion/>
+        </div>
     );
 }
 
@@ -16,13 +20,20 @@ Hello()
 function Rating() {
     return (
         <div>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
-            <div>Star</div>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
         </div>
     )
+}
+function Star() {
+return(
+    <div>
+        <div>Star</div>
+    </div>
+)
 }
 function Accordion() {
 return (
