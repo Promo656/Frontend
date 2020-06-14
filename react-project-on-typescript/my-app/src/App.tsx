@@ -1,19 +1,28 @@
 import React from 'react';
 import './App.css';
+import Accordion from "./components/Accordion/Accordion";
+import {Rating} from "./components/Rating/Rating";
 
 function App() {
     return (
         <div>
             <AppTitle/>
-            <Rating/>
+            Article 1
+            <Rating value={1} />
             <Accordion/>
-            <Rating/>
+            Article 2
+            <Rating value={4}/>
+            <Rating value={0}/>
+            <Rating value={2}/>
+            <Rating value={3}/>
+            <Rating value={5}/>
+
         </div>
     );
 }
 
 function AppTitle() {
-    return <>This is React APP</>
+    return <div>This is React APP</div>
 }
 
 function Hello() {
@@ -22,55 +31,5 @@ function Hello() {
 
 Hello()
 
-function Rating() {
-    console.log("Rating rendered")
-    return (
-        <div>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-            <Star/>
-        </div>
-    )
-}
-
-function Star() {
-    console.log("Star rendered")
-    return (
-        <div>
-            <div>Star</div>
-        </div>
-    )
-}
-
-function Accordion() {
-    return (
-        <div>
-            <AccTitle/>
-            <AccMenu/>
-        </div>
-    )
-}
-
-function AccTitle() {
-    return (
-        <div>
-            <h3>Menu</h3>
-        </div>
-    )
-}
-
-function AccMenu() {
-    return (
-        <div>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </div>
-    )
-}
 
 export default App;
