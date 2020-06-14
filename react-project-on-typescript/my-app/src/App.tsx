@@ -6,30 +6,27 @@ import {Rating} from "./components/Rating/Rating";
 function App() {
     return (
         <div>
-            <AppTitle/>
+            <PageTitle title={"This is React APP"}/>
+            <PageTitle title={"My friends"}/>
             Article 1
             <Rating value={1} />
-            <Accordion/>
+            <Accordion title={"Menu"}/>
+            <Accordion title={"SubMenu"}/>
+            < Accordion title={"SubSubMenu"}/>
             Article 2
             <Rating value={4}/>
             <Rating value={0}/>
             <Rating value={2}/>
             <Rating value={3}/>
             <Rating value={5}/>
-
         </div>
     );
 }
 
-function AppTitle() {
-    return <div>This is React APP</div>
+function PageTitle(props:any) {
+    return (
+        <h1>{props.title}</h1>
+    )
 }
-
-function Hello() {
-    alert("Hello")
-}
-
-Hello()
-
 
 export default App;
