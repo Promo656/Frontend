@@ -22,6 +22,7 @@ function App() {
             <Rating value={2}/>
             <Rating value={4}/>
             <Rating value={1}/>
+            <h1>Hello</h1>
         </div>
     );
 }
