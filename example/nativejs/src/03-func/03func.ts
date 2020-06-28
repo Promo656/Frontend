@@ -13,14 +13,3 @@ return(
 )
 }
 
-export function budgeCost(city:CityType,cost:number) {
-city.governmentBuildings[0].budget+=cost
-}
-
-export function repairHouse(city:CityType) {
- city.houses[0].repaired=true
-}
-
-export function reduceStaff(city:CityType,count:number) {
-city.governmentBuildings[0].staffCount-=count
-}

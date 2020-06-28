@@ -1,5 +1,5 @@
-import {CityType} from "./02obj";
-import {budgeCost, reduceStaff, repairHouse} from "../03-func/03func";
+import {buildingsFilter, CityType, destroyBuildings} from "./02obj";
+import {budgeCost, reduceStaff, repairHouse} from "../02-obj/02obj";
 
 let city: CityType
 
@@ -7,6 +7,7 @@ beforeEach(() => {
     city = {
         title: "New York",
         houses: [{
+            id: 1,
             buildedAt: 2012,
             repaired: false,
             address: {
@@ -17,6 +18,7 @@ beforeEach(() => {
             }
         },
             {
+                id: 2,
                 buildedAt: 2008,
                 repaired: false,
                 address: {
@@ -27,6 +29,7 @@ beforeEach(() => {
                 }
             },
             {
+                id: 3,
                 buildedAt: 2020,
                 repaired: false,
                 address: {
@@ -38,12 +41,21 @@ beforeEach(() => {
             }
         ],
         governmentBuildings: [{
-            types:"Hospital",
-            budget:200000,
-            staffCount:200,
-            address:{
-                street:{
-                    title:"Central Str"
+            types: "Hospital",
+            budget: 200000,
+            staffCount: 200,
+            address: {
+                street: {
+                    title: "Central Str"
+                }
+            }
+        }, {
+            types: "Fire-Station",
+            budget: 500000,
+            staffCount: 1000,
+            address: {
+                street: {
+                    title: "Central Str"
                 }
             }
         }],
@@ -86,17 +98,32 @@ test.skip("Government test", () => {
     expect(city.governmentBuildings[1].address.street.title).toBe("South Str")
 })
 
-test.skip("Budget change",()=>{
-    budgeCost(city,-100000)
-expect(city.governmentBuildings[0].budget).toBe(100000)
+test.skip("Budget change", () => {
+    budgeCost(city, -100000)
+    expect(city.governmentBuildings[0].budget).toBe(100000)
 })
 
-test.skip("Repair house",()=>{
+test.skip("Repair house", () => {
     repairHouse(city)
     expect(city.houses[0].repaired).toBe(true)
 })
 
-test("Reduce staff", ()=>{
+test.skip("Reduce staff", () => {
     reduceStaff(city, 50)
     expect(city.governmentBuildings[0].staffCount).toBe(150)
+})
+
+test.skip("Destroy buildings", () => {
+    destroyBuildings(city, "Happy street")
+    expect(city.houses.length).toBe(1)
+    expect(city.houses[0].id).toBe(1)
+})
+
+test("Building with correct staff count", () => {
+    /*   let buildings = buildingsFilter(city.governmentBuildings, 500)
+
+       expect(buildings.length).toBe(1)
+       expect(buildings[0].types).toBe("Fire-Statio")*/
+    buildingsFilter(city, 500)
+    expect(city.governmentBuildings.length).toBe(1)
 })
