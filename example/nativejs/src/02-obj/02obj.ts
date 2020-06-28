@@ -1,4 +1,4 @@
-type StudentType = {
+export type StudentType = {
     name: string
     age: number
     isActive: boolean
@@ -13,7 +13,7 @@ type RussiaType = {
     nameStreet: string
 }
 
-const student: StudentType = {
+export const student: StudentType = {
     name: "Egor",
     age: 26,
     isActive: false,
@@ -29,11 +29,12 @@ const student: StudentType = {
         "JS"
     ],
 }
+
 export type StreetType = {
     title:string
 }
 export type AddressType = {
-    number: number
+    number?: number
     street: StreetType
 }
 export type HousesType = {
@@ -44,10 +45,10 @@ export type HousesType = {
 
 
 export type GovernmentBuildingsType={
-    type:string
+    types:string
     budget:number
     staffCount:number
-    address:Array<AddressType>
+    address:AddressType
 }
 export type CityType = {
     title: string

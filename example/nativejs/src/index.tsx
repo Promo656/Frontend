@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {student} from "./02-obj/02obj";
+import {changeSkill} from "./03-func/03func";
 
 ReactDOM.render(
   <React.StrictMode>
