@@ -4,7 +4,7 @@ export type ManType = {
 }
 
 const people: Array<ManType> = [
-    {name: "Dima Volkon", age: 18},
+    {name: "Dima Volkon", age: 20},
     {name: "Vova Ivanov", age: 29},
     {name: "Kirill Petrov", age: 38}
 ]
