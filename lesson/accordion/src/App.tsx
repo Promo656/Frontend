@@ -1,7 +1,8 @@
 import React from 'react';
-import {Accordion} from "./components/Accordion/Accordion";
+import {Accordion, SubTitle} from "./components/Accordion/Accordion";
 import {Rating} from "./components/Rating/Rating";
 import {OnOff} from "./components/onOff/onOff";
+import {UnControlledAccordion} from "./components/Accordion/UnControlledAccordion";
 
 
 function AppTitle(props:any) {
@@ -12,15 +13,18 @@ function AppTitle(props:any) {
 export function App() {
     return (
         <div>
-       {/*     <AppTitle title="This is APP component"/>
+            <AppTitle title="This is APP component"/>
+            <SubTitle title={"Controlled Accordion"}/>
             <Accordion value="Menu" collapsed={true}/>
             <Accordion value="Users" collapsed={true}/>
+            <SubTitle title={"Uncontrolled Accordion"}/>
+            <UnControlledAccordion value={"Menu"} collapsed={true}/>
+            <UnControlledAccordion value={"Users"} collapsed={true}/>
+            <SubTitle title={"Controlled Rating"}/>
             <Rating value={0}/>
-            <Rating value={1}/>
-            <Rating value={2}/>
-            <Rating value={3}/>
-            <Rating value={4}/>*/}
-            <OnOff on={true}/>
+            <SubTitle title={"Uncontrolled Rating"}/>
+            <OnOff/>
+            <OnOff/>
         </div>
     );
 }

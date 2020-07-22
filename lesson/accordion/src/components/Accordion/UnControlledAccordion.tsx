@@ -1,18 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 
 type Props1 = {
     value: string
     collapsed: boolean
 }
 type Props2 = {
-    title: string
+    value: string
 }
 
-export function Accordion(props: Props1) {
+export function UnControlledAccordion(props: Props1) {
+    let [collapsed, setCollapsed]=useState(true)
+
     return (
         <div>
-            <AccordionTitle title={props.value}/>
-            {props.collapsed && <AccordionBody/>}
+            <button onClick={()=>{setCollapsed(!collapsed)}}>Toggle</button>
+            <AccordionTitle value={props.value}/>
+            {collapsed && <AccordionBody/>}
         </div>
     )
 }
@@ -20,15 +23,8 @@ export function Accordion(props: Props1) {
 export function AccordionTitle(props: Props2) {
     return (
         <div>
-            <h3>{props.title}</h3>
-        </div>
-    )
-}
+            <h3>{props.value}</h3>
 
-export function SubTitle(props: Props2) {
-    return (
-        <div>
-            <h4>{props.title}</h4>
         </div>
     )
 }

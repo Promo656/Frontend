@@ -1,38 +1,46 @@
-import React from "react";
+import React, {useState} from "react";
 import "./../../App.css"
 
-type PropsType={
-    on:boolean
-}
-export function OnOff(props:PropsType) {
-    let onStyle={
-        width:"30px",
-        height:"20px",
-        border:"1px solid black",
-        display:"inline",
-        margin:"5px"
+
+
+export function OnOff() {
+    let [on,setOn]=useState(false)
+
+    let onStyle = {
+        width: "60px",
+        height: "40px",
+        border: "1px solid black",
+        display: "inline-block",
+        marginRight: "10px",
+        backgroundColor:on? "green":"white"
     }
-    let offStyle={
-        width:"30px",
-        height:"20px",
-        border:"1px solid black",
-        display:"inline",
-        margin:"5px"
+    let offStyle = {
+        width: "60px",
+        height: "40px",
+        border: "1px solid black",
+        display: "inline-block",
+        marginRight: "10px",
+        backgroundColor: on? "white" : "red"
+
     }
-    let lampstyle={
-        width:"10px",
-        height:"10px",
-        borderRadius:"10px",
-        border:"1px solid black",
-        display:"inline-block"
+    let lampstyle = {
+        width: "40px",
+        height: "40px",
+        borderRadius: "20px",
+        border: "1px solid black",
+        display: "inline-block",
+        backgroundColor: on? "green": "red"
+    }
+    let container = {
+        display: "flex"
     }
 
 
-return(
-    <div>
-        <div style={onStyle}>On</div>
-        <div style={offStyle}>Off</div>
-        <div style={lampstyle}></div>
-    </div>
-)
+    return (
+        <div style={container}>
+            <div style={onStyle} onClick={()=>{setOn(true)}}>On</div>
+            <div style={offStyle} onClick={()=>{setOn(false)}}>Off</div>
+            <div style={lampstyle}></div>
+        </div>
+    )
 }
