@@ -1,25 +1,33 @@
-import React from "react";
-import {TasksList} from "../../../../../social/src/components/homework/02-Tasks/TasksList";
-type Props={
-    value:number
+import React, {useState} from "react";
+
+
+type Props1 = {
+    selected: boolean
+    setRating: () => void
 }
-export function Rating(props: Props) {
+type Props2 = {
+    selected: boolean
+    setRating: () => void
+
+}
+
+export function UnControlledRating() {
+    let [rating, setRating] = useState(0)
     return (
         <div>
-            <Star selected={props.value>0}/><button>1</button>
-            <Star selected={props.value>1}/><button>2</button>
-            <Star selected={props.value>2}/><button>3</button>
-            <Star selected={props.value>3}/><button>4</button>
-            <Star selected={props.value>4}/><button>5</button>
+            <Star selected={rating > 0} setRating={()=>setRating(1)}/>
+            <Star selected={rating > 1} setRating={()=>setRating(2)} />
+            <Star selected={rating > 2} setRating={()=>setRating(3)} />
+            <Star selected={rating > 3} setRating={()=>setRating(4)} />
+            <Star selected={rating > 4} setRating={()=>setRating(5)} />
         </div>
     )
 
 }
 
-function Star(props: any) {
-    if (props.selected === true) {
-        return <span><b>star </b></span>
-    } else {
-        return <span>star </span>
-    }
+function Star(props: Props2) {
+    return (<span onClick={() => props.setRating()}>
+            {props.selected ? <b> star </b> : "star "}
+    </span>
+    )
 }

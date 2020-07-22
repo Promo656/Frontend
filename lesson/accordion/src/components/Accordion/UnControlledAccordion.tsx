@@ -6,6 +6,8 @@ type Props1 = {
 }
 type Props2 = {
     value: string
+    setCollapsed:(value:boolean)=>void
+    collapsed:boolean
 }
 
 export function UnControlledAccordion(props: Props1) {
@@ -13,8 +15,7 @@ export function UnControlledAccordion(props: Props1) {
 
     return (
         <div>
-            <button onClick={()=>{setCollapsed(!collapsed)}}>Toggle</button>
-            <AccordionTitle value={props.value}/>
+            <AccordionTitle value={props.value} setCollapsed={setCollapsed} collapsed={collapsed}/>
             {collapsed && <AccordionBody/>}
         </div>
     )
@@ -23,8 +24,7 @@ export function UnControlledAccordion(props: Props1) {
 export function AccordionTitle(props: Props2) {
     return (
         <div>
-            <h3>{props.value}</h3>
-
+            <h3 onClick={()=>{props.setCollapsed(!props.collapsed)}}>{props.value}</h3>
         </div>
     )
 }
