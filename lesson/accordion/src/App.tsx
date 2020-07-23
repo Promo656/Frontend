@@ -28,6 +28,9 @@ export function App() {
             <SubTitle title={"Controlled Toggle"}/>
             <OnOff/>
             <OnOff/>
+            <OnOff/>
+            <OnOff/>
+            <OnOff/>
         </div>
     );
 }
