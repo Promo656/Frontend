@@ -8,18 +8,48 @@ export default {
     component: Accordion
 };
 
-const callback=action("Accordion mode")
+const callback = action("Accordion mode")
+const onClicked = action("Some item was clicked")
 
-export const CollapsedMode= () => {
-    return <Accordion value={"About Us"} collapsed={false} onChange={callback}/>
+export const CollapsedMode = () => {
+    return <Accordion
+        onClick={onClicked}
+        value={"Menu"}
+        collapsed={false}
+        onChange={callback}
+        item={[]}/>
 }
-export const UnCollapsedMode= () => {
-    return <Accordion value={"About Us"} collapsed={true} onChange={callback}/>
+export const UnCollapsedMode = () => {
+    return <Accordion
+        onClick={onClicked}
+        value={"Users"}
+        collapsed={true}
+        onChange={callback}
+        item={
+            [
+                {title: "Egor", value: 1},
+                {title: "Denis", value: 2},
+                {title: "Dima", value: 3}
+            ]
+        }
+    />
 }
 
 export const ChangeMode = () => {
     let [value, setValue] = useState<boolean>(true)
-    return <Accordion value={"About Us"} collapsed={value} onChange={()=>setValue(!value)}/>
+    return <Accordion
+        onClick={onClicked}
+        value={"About Us"}
+        collapsed={value}
+        onChange={() => setValue(!value)}
+        item={
+            [
+                {title: "Egor", value: 1},
+                {title: "Denis", value: 2},
+                {title: "Dima", value: 3}
+            ]
+        }
+    />
 }
 
 

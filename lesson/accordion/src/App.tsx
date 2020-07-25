@@ -22,9 +22,16 @@ export function App() {
             <AppTitle title="This is APP component"/>
             <SubTitle title={"Controlled Accordion + useState"}/>
             <Accordion
+                item={[
+                    {title: "Egor", value: 1},
+                    {title: "Denis", value: 2},
+                    {title: "Dima", value: 3}
+                ]}
+                onClick={setAccordionCollapsed}
                 value="Menu"
                 collapsed={accordionCollapsed}
                 onChange={()=>{setAccordionCollapsed(!accordionCollapsed)}}
+
             />
             <SubTitle title={"Uncontrolled Accordion"}/>
             <UnControlledAccordion value={"Menu"} collapsed={true}/>
