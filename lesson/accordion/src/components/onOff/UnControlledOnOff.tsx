@@ -1,12 +1,8 @@
 import React, {useState} from "react";
 import "./../../App.css"
 
-type PropsType={
-    on:boolean
-    onChange:(value:boolean)=>void
-}
-
-export function OnOff(props:PropsType) {
+export function OnOff() {
+    let [on,setOn]=useState(false)
 
     let onStyle = {
         width: "60px",
@@ -14,7 +10,7 @@ export function OnOff(props:PropsType) {
         border: "1px solid black",
         display: "inline-block",
         marginRight: "10px",
-        backgroundColor:props.on? "green":"white"
+        backgroundColor:on? "green":"white"
     }
     let offStyle = {
         width: "60px",
@@ -22,7 +18,7 @@ export function OnOff(props:PropsType) {
         border: "1px solid black",
         display: "inline-block",
         marginRight: "10px",
-        backgroundColor: props.on? "white" : "red"
+        backgroundColor: on? "white" : "red"
 
     }
     let lampstyle = {
@@ -31,16 +27,17 @@ export function OnOff(props:PropsType) {
         borderRadius: "20px",
         border: "1px solid black",
         display: "inline-block",
-        backgroundColor: props.on? "green": "red"
+        backgroundColor: on? "green": "red"
     }
     let container = {
         display: "flex"
     }
 
+
     return (
         <div style={container}>
-            <div style={onStyle} onClick={()=>{props.onChange(true)}}>On</div>
-            <div style={offStyle} onClick={()=>{props.onChange(false)}}>Off</div>
+            <div style={onStyle} onClick={()=>{setOn(true)}}>On</div>
+            <div style={offStyle} onClick={()=>{setOn(false)}}>Off</div>
             <div style={lampstyle}></div>
         </div>
     )
