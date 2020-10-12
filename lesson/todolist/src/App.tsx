@@ -32,7 +32,7 @@ type TaskStateType = {
     [key: string]: Array<TaskType>
 }
 
-export function App() {
+export function AppWithReducers() {
 
     let todoListId1 = v1()
     let todoListId2 = v1()
